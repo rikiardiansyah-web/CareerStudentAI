@@ -5,12 +5,12 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  trustHost: true, // Wajib di Vercel/Reverse Proxy agar NextAuth mempercayai domain host
+  trustHost: true,
   secret: process.env.AUTH_SECRET || "careerstudent-ai-gen-think-secret-key-2026-super-secure",
-  adapter: PrismaAdapter(prisma) as any,
+  adapter: PrismaAdapter(prisma),
   session: {
     strategy: "jwt",
-    maxAge: 24 * 60 * 60, // 24 jam (A07: Mengurangi resiko token aktif terlalu lama)
+    maxAge: 24 * 60 * 60,
   },
   providers: [
     // 1. Google OAuth Provider (jika kredensial diisi)
@@ -53,12 +53,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         }
 
         // Hapus token setelah digunakan sekali (Single-Use OTP)
-        await prisma.verificationToken.delete({
+        await prisma.verificationToken.deleteMany({
           where: {
-            identifier_token: {
-              identifier: email,
-              token: inputOtp,
-            },
+            identifier: email,
+            token: inputOtp,
           },
         });
 

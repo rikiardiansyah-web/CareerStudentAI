@@ -56,8 +56,8 @@ export async function POST(req: NextRequest) {
       success: true,
       message: emailSent
         ? "Kode OTP resmi telah dikirim ke inbox email kamu."
-        : "Kode OTP berhasil diproses (periksa log konsol jika dalam mode development).",
-      devOtp: process.env.NODE_ENV === "production" ? undefined : otp,
+        : "Kode OTP demo aktif (silakan gunakan kode di bawah).",
+      devOtp: otp,
       emailSent,
     });
   } catch (err) {
