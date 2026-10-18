@@ -7,7 +7,6 @@ import { prisma } from "@/lib/prisma";
 export const { handlers, auth, signIn, signOut } = NextAuth({
   trustHost: true,
   secret: process.env.AUTH_SECRET || "careerstudent-ai-gen-think-secret-key-2026-super-secure",
-  adapter: PrismaAdapter(prisma),
   session: {
     strategy: "jwt",
     maxAge: 24 * 60 * 60,
@@ -93,6 +92,34 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     }),
   ],
   callbacks: {
+    async signIn({ user, account }) {
+      if (account?.provider === "google" && user.email) {
+        try {
+          const email = user.email.toLowerCase().trim();
+          let profile = await prisma.userProfile.findUnique({
+            where: { email },
+          });
+
+          if (!profile) {
+            profile = await prisma.userProfile.create({
+              data: {
+                email,
+                name: user.name || email.split("@")[0],
+                image: user.image,
+                emailVerified: new Date(),
+                educationLevel: "FINAL_YEAR_STUDENT",
+                targetRoleId: "pm_jr",
+                targetRoleTitle: "Junior Product Manager",
+              },
+            });
+          }
+          user.id = profile.id;
+        } catch (dbErr) {
+          console.error("[signIn callback] Error upserting UserProfile:", dbErr);
+        }
+      }
+      return true;
+    },
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
