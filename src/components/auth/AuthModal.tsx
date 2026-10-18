@@ -97,10 +97,10 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 sm:p-6 overflow-y-auto animate-in fade-in duration-200">
-      <div className="bg-white rounded-3xl max-w-md w-full border border-slate-200/80 shadow-2xl overflow-hidden my-auto transform transition-all">
+    <div className="fixed top-0 left-0 w-screen h-screen z-[9999] bg-slate-900/60 backdrop-blur-sm grid place-items-center p-4 sm:p-6 overflow-y-auto animate-in fade-in duration-200">
+      <div className="bg-white rounded-3xl max-w-md w-full border border-slate-200/90 shadow-2xl overflow-hidden my-auto relative transform transition-all">
         {/* Header Modal */}
-        <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100 bg-slate-50/70">
+        <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100 bg-slate-50/80">
           <div>
             <h3 className="text-base font-bold text-slate-900 font-heading">
               {step === "input-email" ? "Masuk ke Akunmu" : "Verifikasi Email OTP"}
