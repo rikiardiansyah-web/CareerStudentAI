@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="100" fill="#0F172A"/>
+  <!-- Safe Zone Inner Group (80% diameter) -->
+  <g transform="translate(51.2, 51.2) scale(0.8)">
+    <!-- Graduation Cap / Diamond Motif -->
+    <path d="M256 64 L448 170 L256 276 L64 170 Z" fill="#4F46E5" stroke="#6366F1" stroke-width="10"/>
+    <!-- Tassel -->
+    <path d="M405 194 L405 310 C405 320 395 330 384 330 C373 330 363 320 363 310 L363 194" stroke="#14B8A6" stroke-width="10" stroke-linecap="round"/>
+    <!-- Cognitive Node / Bridge Arc -->
+    <path d="M128 220 L128 330 C128 385 180 430 256 430 C332 430 384 385 384 330 L384 310" fill="none" stroke="#6366F1" stroke-width="16" stroke-linecap="round"/>
+    <!-- Central Socratic Insight Spark -->
+    <circle cx="256" cy="320" r="32" fill="#14B8A6"/>
+    <circle cx="256" cy="320" r="16" fill="#FFFFFF"/>
+  </g>
+</svg>
