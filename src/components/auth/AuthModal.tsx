@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { signIn } from "next-auth/react";
 import { Mail, KeyRound, User, Loader2, X, CheckCircle2, AlertCircle } from "lucide-react";
 import { useAppStore } from "@/lib/store/useAppStore";
@@ -20,8 +21,13 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   const [devOtp, setDevOtp] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!isOpen || !mounted) return null;
 
   async function handleSendOtp(e: React.FormEvent) {
     e.preventDefault();
@@ -96,9 +102,9 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
     }
   }
 
-  return (
-    <div className="fixed top-0 left-0 w-screen h-screen z-[9999] bg-slate-900/60 backdrop-blur-sm grid place-items-center p-4 sm:p-6 overflow-y-auto animate-in fade-in duration-200">
-      <div className="bg-white rounded-3xl max-w-md w-full border border-slate-200/90 shadow-2xl overflow-hidden my-auto relative transform transition-all">
+  return createPortal(
+    <div className="fixed inset-0 z-[99999] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto animate-in fade-in duration-200">
+      <div className="bg-white rounded-3xl max-w-md w-full border border-slate-200 shadow-2xl overflow-hidden my-auto relative transform transition-all">
         {/* Header Modal */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-slate-100 bg-slate-50/80">
           <div>
@@ -276,6 +282,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
