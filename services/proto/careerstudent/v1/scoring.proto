@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package careerstudent.v1;
+
+option go_package = "github.com/rikiardiansyah-web/CareerStudentAI/services/scoring-service/gen/careerstudent/v1;careerstudentv1";
+
+// ----------------------------------------------------
+// Scoring & Matchmaking Microservice Definition
+// Contract-first design utilizing Protocol Buffers v3
+// ----------------------------------------------------
+
+service ScoringService {
+  // Evaluasi kecocokan kandidat dengan standar STAR & taksonomi industri
+  rpc CalculateRoleFit(CalculateRoleFitRequest) returns (CalculateRoleFitResponse);
+
+  // Streaming real-time cognitive STAR score processing
+  rpc StreamInterviewScoring(stream InterviewTurnScoreRequest) returns (InterviewTurnScoreResponse);
+}
+
+message CalculateRoleFitRequest {
+  string user_id = 1;
+  string target_role_id = 2;
+  repeated string candidate_skills = 3;
+  string parsed_resume_summary = 4;
+}
+
+message SkillMatchDetail {
+  string skill_name = 1;
+  string required_level = 2;
+  string status = 3; // STRONG_MATCH, PARTIAL_MATCH, CRITICAL_GAP
+  double confidence_score = 4;
+}
+
+message CalculateRoleFitResponse {
+  int32 overall_fit_score = 1; // 0 - 100
+  repeated SkillMatchDetail matched_skills = 2;
+  repeated string critical_gaps = 3;
+  string xai_explanation = 4; // Explainable AI synthesis
+  int64 computed_at_unix = 5;
+}
+
+message InterviewTurnScoreRequest {
+  string session_id = 1;
+  int32 turn_index = 2;
+  string question = 3;
+  string candidate_answer = 4;
+}
+
+message InterviewTurnScoreResponse {
+  string session_id = 1;
+  int32 score_situation = 2;
+  int32 score_task = 3;
+  int32 score_action = 4;
+  int32 score_result = 5;
+  int32 cognitive_reflection_score = 6;
+  string micro_feedback = 7;
+}
