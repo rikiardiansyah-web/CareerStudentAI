@@ -12,11 +12,14 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     maxAge: 24 * 60 * 60,
   },
   providers: [
-    // 1. Google OAuth Provider (jika kredensial diisi)
-    Google({
-      clientId: process.env.GOOGLE_CLIENT_ID || "",
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
-    }),
+    ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET
+      ? [
+          Google({
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+          }),
+        ]
+      : []),
 
     // 2. Email OTP / Secure One-Time Passcode Provider
     Credentials({
