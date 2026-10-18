@@ -5,6 +5,8 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  trustHost: true, // Wajib di Vercel/Reverse Proxy agar NextAuth mempercayai domain host
+  secret: process.env.AUTH_SECRET || "careerstudent-ai-gen-think-secret-key-2026-super-secure",
   adapter: PrismaAdapter(prisma) as any,
   session: {
     strategy: "jwt",
