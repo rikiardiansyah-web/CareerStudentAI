@@ -8,6 +8,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma) as any,
   session: {
     strategy: "jwt",
+    maxAge: 24 * 60 * 60, // 24 jam (A07: Mengurangi resiko token aktif terlalu lama)
   },
   providers: [
     // 1. Google OAuth Provider (jika kredensial diisi)
