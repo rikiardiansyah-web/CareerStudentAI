@@ -113,12 +113,13 @@ flowchart TD
 | **Frontend Framework** | Next.js 16 (App Router) & React 19 | Performa kompilasi Turbopack, arsitektur *Server Components*, dan modularitas tinggi. |
 | **Bahasa & Typing** | TypeScript 5 (Strict Mode) | Menjamin keandalan kode (*type safety*), mencegah *runtime error*, dan standarisasi API contracts. |
 | **Desain & UI Styling** | Tailwind CSS v4 & Lucide Icons | Desain responsif berbasis *mobile-first*, aksesibilitas sentuh ($\ge 44\text{px}$ touch target), dan zero UI-slop. |
-| **Platform Deployment** | Progressive Web App (PWA) | *Installable* ke perangkat mobile/desktop, *Service Worker* dengan *multi-strategy caching* (CacheFirst/NetworkFirst), dan halaman *offline.html*. |
+| **Platform Deployment** | Vercel Serverless & Edge Cloud + PWA | Siap diakses global via `https://career-student-ai.vercel.app`, *Installable* PWA, *Service Worker* dengan *multi-strategy caching* (CacheFirst/NetworkFirst). |
 | **PDF Generation Engine** | `jspdf` (Client-Side Vector Engine) | Sintesis berkas `.pdf` langsung di memori peramban; kebal terhadap *browser pop-up blocker* dengan presisi tata letak A4. |
 | **AI Reasoning Model** | Google Gemini 2.5 Flash API | Inferensi penalaran cepat dengan *prompt engineering* persona *Socratic Career Mentor*, dipadu dengan *deterministic heuristic fallback*. |
 | **Manajemen State** | Zustand | *State management* ringan, reaktif, dan persisten ke *localStorage* (*offline-first draft*). |
-| **Database & ORM** | Prisma 6 ORM & SQLite Lokal | Penyimpanan terenkapsulasi secara lokal, aman, tanpa ketergantungan server database eksternal yang kompleks. |
-| **Autentikasi** | NextAuth.js Beta & Google OAuth | Keamanan autentikasi modern dengan opsi SSO Google satu-klik dan proteksi profil tamu (*guest mode*). |
+| **Database & ORM** | PostgreSQL (Neon Cloud) & Prisma 6 ORM | Penyimpanan relasional cloud production-grade dengan koneksi terenkripsi (TLS/SSL) dan pooling otomatis. |
+| **Microservices Engine** | Golang (gRPC-Go) & Protocol Buffers v3 | Komputasi taksonomi skill dan matchmaking performa tinggi (sub-millisecond) menggunakan kontrak standar Buf & Protobuf v3. |
+| **Autentikasi & Keamanan** | NextAuth.js Beta, Google OAuth & OWASP Hardened | Dilengkapi Content Security Policy (CSP), anti-clickjacking, session max-age 24 jam, dan proteksi JWT. |
 | **Dataset & Taksonomi** | *Curated Industry Roles & Skills Taxonomy* (4 Rumpun, 7 Peran Utama) | Pemetaan keterampilan standar industri mencakup IT, Manajemen/MT, SDM/HR, Pemasaran Digital, dan Keuangan. |
 
 ---
@@ -126,21 +127,23 @@ flowchart TD
 ### 7. DESAIN SISTEM / ARSITEKTUR / MOCKUP / PROTOTYPE
 
 #### 7.1 Arsitektur Sistem Berlapis (Tiered Architecture)
-Sistem dirancang dengan arsitektur modular yang memisahkan lapisan presentasi, logika kognitif, orkestrasi AI, dan penyimpanan data terenkapsulasi:
+Sistem dirancang dengan arsitektur modular yang memisahkan lapisan presentasi, logika kognitif, orkestrasi AI, microservice komputasi performa tinggi, dan penyimpanan data terpusat:
 
 ```mermaid
 graph TD
     Client["Klien Web & Mobile (PWA Browser)"] --> UI["Lapisan Presentasi UI/UX\n(Tailwind CSS, BottomNav, Sidebar, Responsive Cards)"]
     UI --> Store["Zustand Store & LocalStorage Persistence"]
     
-    UI --> NextAPI["Next.js Route Handlers (/api)"]
+    UI --> NextAPI["Next.js Route Handlers (/api on Vercel)"]
     NextAPI --> ParserEngine["In-Memory Resume Parser & Sanitizer"]
     NextAPI --> SocraticEngine["Gemini Socratic Engine + Heuristic Fallback"]
     NextAPI --> InterviewEngine["STAR Cognitive Interview Simulator"]
     NextAPI --> MatcherEngine["Explainable Career & Skill-Gap Matcher"]
     
+    NextAPI -.->|gRPC / Protobuf v3| GoService["Golang Scoring Microservice\n(High-Performance Taxonomies & STAR Evaluator)"]
+    
     NextAPI --> NextAuth["NextAuth & Google OAuth Provider"]
-    NextAuth --> PrismaDB[("Prisma ORM & SQLite Local Database")]
+    NextAuth --> CloudDB[("PostgreSQL Database (Neon Cloud) via Prisma ORM")]
 ```
 
 #### 7.2 Prototipe & Desain Antarmuka Pengguna (Prototype UI Modules)

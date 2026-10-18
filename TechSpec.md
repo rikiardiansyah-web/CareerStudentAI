@@ -23,9 +23,13 @@ flowchart TD
         TaxonomyEngine["Skill Taxonomy & Gap Scoring Engine"]
     end
 
-    subgraph DataAI ["External & Data Layer"]
+    subgraph GoMicroservice ["High-Performance Computing Layer (Golang gRPC)"]
+        ScoringService["Scoring & Matchmaking Microservice (gRPC-Go + Protobuf v3)"]
+    end
+
+    subgraph DataAI ["External & Cloud Data Layer"]
         GeminiAPI["Google Gemini 2.5 Flash / Pro API"]
-        LocalDB["Persistent DB (SQLite / Prisma ORM)"]
+        CloudDB["Persistent DB (PostgreSQL Neon Cloud / Prisma ORM)"]
         TaxonomyData["Industry Skill Taxonomy (Curated JSON/DB)"]
     end
 
@@ -37,10 +41,11 @@ flowchart TD
     RouteHandlers --> PDFParser
     RouteHandlers --> PromptEngine
     RouteHandlers --> TaxonomyEngine
+    RouteHandlers -.->|gRPC Protocol| ScoringService
 
     PromptEngine <--> GeminiAPI
     TaxonomyEngine <--> TaxonomyData
-    RouteHandlers <--> LocalDB
+    RouteHandlers <--> CloudDB
 ```
 
 ---

@@ -43,7 +43,7 @@ erDiagram
 
 ```prisma
 datasource db {
-  provider = "sqlite" // Siap dimigrasikan ke PostgreSQL/LibSQL
+  provider = "postgresql" // PostgreSQL Production Database (Neon Cloud / Local)
   url      = env("DATABASE_URL")
 }
 
