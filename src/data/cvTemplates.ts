@@ -19,17 +19,17 @@ export interface CvTemplatePreset {
 
 export const CV_TEMPLATE_PRESETS: CvTemplatePreset[] = [
   {
-    id: "alfredo_torres",
-    name: "Alfredo Torres (Modern Marketing)",
+    id: "executive_modern",
+    name: "Executive Modern Layout (Marketing & Growth)",
     roleTitle: "Marketing Manager",
     style: "modern",
-    description: "Layout modern dengan header beraksen navy, tanggal rata kanan, dan format pengalaman terstruktur.",
+    description: "Layout eksekutif modern dengan header beraksen navy, tanggal rata kanan, dan format pencapaian terstruktur berstandar ATS.",
     persona: {
-      name: "Alfredo Torres",
+      name: "Arif Pratama",
       targetRoleTitle: "Marketing Manager",
-      email: "hello@reallygreatsite.com",
-      phone: "123-456-7890",
-      address: "123 Anywhere St., Any City, ST 12345",
+      email: "arif.pratama@example.com",
+      phone: "+62 812-3456-7890",
+      address: "Jakarta Selatan, DKI Jakarta",
       summary:
         "Results-driven Marketing Manager with extensive experience in developing and executing strategic marketing initiatives that drive brand growth and customer engagement. Proven expertise in digital marketing, campaign management, market research, and team leadership. Adept at analyzing market trends, optimizing marketing performance, and delivering measurable business results in competitive environments.",
     },
@@ -170,17 +170,17 @@ export const CV_TEMPLATE_PRESETS: CvTemplatePreset[] = [
     ],
   },
   {
-    id: "mariana_napolitani",
-    name: "Mariana Napolitani (Classic ATS)",
+    id: "classic_ats",
+    name: "Harvard Classic ATS Standard (Creative & Media)",
     roleTitle: "Creative & Art Director",
     style: "classic",
-    description: "Format klasik ATS dengan nama centered, garis pembatas tipis elegan, dan struktur seksi proporsional.",
+    description: "Format klasik ATS dengan nama centered, garis pembatas tipis elegan, dan pembagian seksi proporsional.",
     persona: {
-      name: "Mariana Napolitani",
+      name: "Maya Anindita",
       targetRoleTitle: "Creative & Art Director",
-      email: "hello@reallygreatsite.com",
-      phone: "123-456-7890",
-      address: "123 Anywhere St., Any City",
+      email: "maya.anindita@example.com",
+      phone: "+62 821-9876-5432",
+      address: "Bandung, Jawa Barat",
       summary:
         "Profesional kreatif dengan kemampuan mengembangkan konsep visual yang kuat dan mengarahkan berbagai proyek desain dari tahap perencanaan hingga implementasi. Berpengalaman dalam membangun identitas visual yang konsisten, memimpin kolaborasi tim kreatif, serta menghasilkan karya yang mendukung tujuan komunikasi dan pemasaran. Memiliki perhatian tinggi terhadap detail, tren desain, dan pengalaman audiens.",
     },

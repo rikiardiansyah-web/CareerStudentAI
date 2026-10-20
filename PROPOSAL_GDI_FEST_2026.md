@@ -1,146 +1,131 @@
 # PROPOSAL LOMBA INOVASI DIGITAL
 ## GDI FEST 2026 — *Generasi Digital Intelektual*
 ### Tema: *"Gen-Think: Bridging Human Intelligence in the Digital Era"*
+### Sub-Bidang: *Education and Career Innovation (EdTech & AI)*
 
 ---
 
 <div align="center">
 
 # **CAREERSTUDENT AI**
-### *Adaptive Career Co-Pilot Berbasis Human-in-the-Loop & Socratic Dialogue untuk Menjembatani Kesiapan Kerja Mahasiswa di Era Disrupsi Kecerdasan Buatan*
+### *Adaptive Career Co-Pilot Berbasis Human-in-the-Loop & Socratic Dialogue untuk Menjembatani Kesiapan Kerja Mahasiswa Multidisiplin di Era AI Generatif*
 
 ---
 
-**Bidang Inovasi:** Artificial Intelligence & Teknologi Digital
-
----
-
-### TIM AQUAMAN
+**TIM AQUAMAN TEKNOKRAT**
 
 | Peran | Nama Lengkap | NIM | Program Studi |
-|:---:|:---|:---:|:---|
+| :---: | :--- | :---: | :--- |
 | **Ketua Tim** | **Riki Ardiansyah** | 24313003 | S1 Teknologi Informasi |
-| Anggota 1 | Jovan Akbar Setiodono | 24313024 | S1 Teknologi Informasi |
-| Anggota 2 | Fiqi Rahman Al Afkhoni | 24313023 | S1 Teknologi Informasi |
+| **Anggota 1** | **Jovan Akbar Setiodono** | 24313024 | S1 Teknologi Informasi |
+| **Anggota 2** | **Fiqi Rahman Al Afkhoni** | 24313023 | S1 Teknologi Informasi |
+
+---
+
+**Dosen Pembimbing:**
+### **Dr. Erliyan Redy Susanto, M.Kom.**
 
 ---
 
 ### **UNIVERSITAS TEKNOKRAT INDONESIA**
+*Kampusnya Sang Juara*
 **2026**
 
 </div>
 
 ---
 
-## 1. LATAR BELAKANG
+### RINGKASAN EKSEKUTIF (EXECUTIVE SUMMARY)
 
-### *Ketika Mesin Berpikir Menggantikan Manusia yang Berhenti Berpikir*
+Di tengah pesatnya otomatisasi kecerdasan buatan (*Artificial Intelligence* / AI), mahasiswa tingkat akhir dan lulusan baru (*fresh graduates*) di Indonesia menghadapi disrupsi ganda: ketergantungan pasif pada alat pembuat teks instan (fenomena ***vibe-applying***) yang menumpulkan penalaran kritis, serta kesenjangan kompetensi nyata (*skills gap*) terhadap standar industri modern. Kehadiran *Large Language Models* (LLMs) seperti ChatGPT pada awalnya digadang-gadang sebagai alat bantu, namun dalam praktiknya justru melahirkan ilusi kesiapan kerja: mahasiswa menyalin klaim pengalaman yang tidak mereka pahami, kehilangan orisinalitas portofolio, dan gagal total saat diuji dalam wawancara perilaku mendalam (*behavioral interview*).
 
-Indonesia sedang menghadapi paradoks yang tidak pernah dibayangkan sebelumnya. Di satu sisi, revolusi kecerdasan buatan generatif (*Generative AI*) menjanjikan percepatan produktivitas hingga 40% di berbagai sektor industri (McKinsey Global Institute, 2023). Di sisi lain, kemudahan ini justru menciptakan **generasi yang kehilangan kemampuan paling mendasar: berpikir kritis tentang dirinya sendiri.**
+**CAREERSTUDENT AI** hadir sebagai inovasi *Adaptive Career Co-Pilot* berbasis web progresif (PWA) yang mengusung paradigma **Human-in-the-Loop (HITL)** dan metode dialektika **Sokratik**. Sistem ini menolak pendekatan *black-box auto-generation* dan menggantikannya dengan pendampingan reflektif: 
+1. Mahasiswa dibimbing mengartikulasikan pencapaian otentik ke format ATS presisi tinggi melalui **Fast Builder** dan **High-Fidelity PDF Exporter** (dengan pilihan *Executive Modern Layout* dan *Harvard Classic ATS Standard*);
+2. Diksi resume diuji melalui **Socratic Questioning Engine** yang dilindungi oleh **Explicit Approval Gate** (AI dilarang keras mengubah teks CV tanpa persetujuan eksplisit pengguna);
+3. Kesenjangan keterampilan didiagnosis lintas 4 rumpun keilmuan menggunakan algoritma **Explainable AI (XAI)** dengan rumus matematis transparan; serta
+4. Kesiapan mental dan kemampuan berbicara diasah melalui **Cognitive Mock Interview Simulator** adaptif berlandaskan metode STAR (*Situation, Task, Action, Result*) yang dilengkapi **Mandatory Self-Reflection Gate**.
 
-Bayangkan skenario berikut — yang bukan lagi fiksi, melainkan realitas sehari-hari di kampus-kampus seluruh Indonesia:
-
-> *Seorang mahasiswa tingkat akhir membuka ChatGPT, mengetik "buatkan CV untuk posisi Data Analyst", menyalin hasilnya tanpa membaca, dan mengirimkannya ke 50 perusahaan. Ketika dipanggil wawancara, pewawancara bertanya: "Anda menulis bahwa Anda meningkatkan efisiensi proses 30%. Bisa ceritakan bagaimana caranya?" Mahasiswa itu terdiam — karena angka itu bukan miliknya. Kalimat itu bukan pengalamannya. Bahkan ia tidak ingat pernah menulisnya.*
-
-Fenomena ini kini memiliki nama: ***vibe-applying*** — melamar kerja berdasarkan "vibes" teks hasil AI, tanpa substansi pengalaman nyata di baliknya.
-
-**World Economic Forum (WEF)** dalam *Future of Jobs Report 2023* memproyeksikan bahwa **44% keterampilan inti pekerja akan berubah dalam lima tahun ke depan.** Artinya, mahasiswa yang lulus hari ini tidak hanya harus bersaing dengan sesama manusia — mereka harus bersaing dengan mesin yang mampu menghasilkan teks, kode, dan analisis dalam hitungan detik. Dalam kompetisi seketat ini, satu-satunya keunggulan yang tidak dapat direplika oleh mesin adalah **keaslian pengalaman** dan **kedalaman penalaran kritis**.
-
-Namun data nasional menunjukkan gambaran yang mengkhawatirkan. **Badan Pusat Statistik (BPS, 2024)** mencatat Tingkat Pengangguran Terbuka (TPT) untuk lulusan universitas di Indonesia masih mencapai **5,73%** — angka yang secara konsisten lebih tinggi dibandingkan lulusan SMK. Penyebab utamanya bukan kurangnya ijazah, melainkan ***skills mismatch***: ketidaksesuaian antara apa yang diajarkan kampus dengan apa yang dibutuhkan industri.
-
-Lebih mengkhawatirkan lagi, survei **LinkedIn Economic Graph (2024)** mengungkapkan bahwa **68% perekrut korporasi** kini menggunakan sistem **Applicant Tracking System (ATS)** untuk menyaring kandidat secara otomatis — dan **75% resume ditolak sebelum dibaca manusia** karena gagal memenuhi standar format dan diksi yang dikenali ATS. Mahasiswa yang tidak memahami cara kerja sistem ini secara literal **tidak pernah mendapat kesempatan untuk dilihat**, sekeras apa pun mereka berusaha.
-
-Jika tidak ada intervensi, inilah yang akan terjadi:
-
-- **Generasi *copy-paste* yang tidak bisa mempertanggungjawabkan isi CV mereka sendiri** saat wawancara mendalam (*behavioral interview*).
-- **Angka pengangguran terdidik yang terus membengkak** karena mahasiswa mengirim puluhan lamaran generik tanpa memahami kesenjangan kompetensi (*skill gap*) mereka.
-- **Erosi kepercayaan industri terhadap kualitas lulusan perguruan tinggi**, yang pada akhirnya menurunkan nilai tawar seluruh sistem pendidikan tinggi Indonesia.
-- **Hilangnya kemandirian berpikir kritis** — keterampilan yang justru menjadi pembeda antara pekerja yang tergantikan mesin dan yang memimpin mesin.
-
-Oleh karena itu, teknologi tidak boleh menjadi pengganti pikiran manusia. Teknologi harus menjadi **jembatan kognitif** (*cognitive bridge*) — alat yang memicu, membimbing, dan memperkuat kecerdasan manusia. Inilah filosofi yang menjiwai **CAREERSTUDENT AI**: bukan AI yang menggantikan mahasiswa berpikir, melainkan AI yang **memaksa mahasiswa untuk berpikir lebih tajam dari sebelumnya**.
+Prototipe CAREERSTUDENT AI telah selesai diimplementasikan 100%, teruji melalui 42 kasus uji *blackbox*, diaudit aman sesuai standar OWASP Top 10, dan telah aktif beroperasi secara global di infrastruktur cloud Vercel: **`https://career-student-ai.vercel.app`**.
 
 ---
 
-## 2. PROBLEM STATEMENT (RUMUSAN MASALAH)
+## A. LATAR BELAKANG
 
-Berdasarkan analisis latar belakang di atas, tiga rumusan masalah utama yang dijawab oleh inovasi ini adalah:
+### A.1 Fenomena Kontemporer: Epidemi *Vibe-Applying* di Era AI Generatif
+Transisi dari bangku perguruan tinggi menuju dunia kerja profesional merupakan fase paling menentukan bagi masa depan generasi muda. Namun saat ini, dunia pendidikan tinggi Indonesia sedang berhadapan dengan disrupsi kognitif yang belum pernah terjadi sebelumnya. Kehadiran teknologi AI generatif komersial memicu fenomena yang oleh para praktisi rekrutmen global dijuluki sebagai ***vibe-applying***: kebiasaan mahasiswa melamar puluhan hingga ratusan lowongan pekerjaan menggunakan resume yang disusun secara instan melalui *prompt* generik AI, tanpa pernah membaca, memahami, apalagi merefleksikan kebenaran klaim di dalam dokumen tersebut.
 
-### Masalah 1: Krisis Orisinalitas — *Ketika CV Bukan Milik Penulisnya*
-> **Bagaimana merancang sistem penyusunan resume berbasis AI yang justru memperkuat — bukan menggantikan — pemahaman substansi pengalaman dan orisinalitas diri mahasiswa?**
+Fenomena kontraproduktif ini melahirkan tiga dampak destruktif nyata:
+1. **Otomatisasi Tanpa Pemahaman (*Surface-Level Automation*):** Mahasiswa merasa telah menyelesaikan resume berstandar tinggi, padahal teks yang dihasilkan hanyalah rangkaian kata klise yang terputus dari realitas kompetensi mereka.
+2. **Ketiadaan Refleksi Pengalaman (*Loss of Experiential Authenticity*):** Portofolio mahasiswa menjadi seragam dan kehilangan karakter otentik. Cerita tentang proyek kuliah atau kegiatan organisasi kehilangan kedalaman dinamika pemecahan masalah.
+3. **Kehancuran di Meja Wawancara Mendalam:** Ketika tim rekruter korporasi menanyakan proses pengambilan keputusan (*decision-making process*), hambatan teknis, atau bukti dampak kuantitatif dari proyek yang tertera di CV, kandidat langsung terdiam dan gugur. Mereka gagal menjelaskan substansinya karena **mereka tidak pernah melalui proses refleksi mendalam saat menyusun resume tersebut**.
 
-Mahasiswa saat ini terperangkap dalam paradoks: semakin canggih alat AI yang mereka gunakan untuk membuat CV, semakin dangkal pemahaman mereka tentang isi CV tersebut. Resume berubah dari dokumen refleksi personal menjadi teks generik yang dihasilkan mesin — indah di permukaan, kosong di substansi. Ketika pewawancara menggali detail pengalaman yang tertulis, kandidat gagal menjelaskan karena **mereka tidak pernah melalui proses refleksi mendalam**.
+### A.2 Bukti Empiris & Urgensi Data Kuantitatif
+Krisis ini dikonfirmasi oleh berbagai rilis data resmi nasional dan internasional:
+* **Badan Pusat Statistik (BPS Sakernas, 2024):** Tingkat Pengangguran Terbuka (TPT) untuk lulusan universitas (sarjana/diploma) di Indonesia masih berada di angka **5,73%**, yang secara konsisten lebih tinggi dibandingkan rata-rata lulusan pendidikan menengah kejuruan. Terdapat hampir **1 juta sarjana menganggur** di Indonesia, dengan penyebab dominan bukanlah ketiadaan ijazah, melainkan ***skills mismatch*** (ketidaksesuaian keahlian) dan kegagalan kandidat mendemonstrasikan kompetensi nyata saat proses seleksi kerja.
+* **World Economic Forum (WEF, 2023):** Laporan *The Future of Jobs Report 2023* memproyeksikan bahwa **44% keterampilan inti tenaga kerja akan berubah drastis dalam lima tahun ke depan**, dengan 83 juta lapangan kerja terdisrupsi dan 69 juta lapangan kerja baru tercipta. Industri menuntut kemampuan analitis, pemikiran kritis, dan ketangkasan adaptif—keahlian yang justru tumpul apabila mahasiswa terbiasa menggantungkan proses berpikirnya pada mesin.
+* **LinkedIn Global Talent Trends (2024):** Lebih dari **68% perusahaan korporasi** telah mengadopsi sistem *Applicant Tracking System* (ATS) berbasis penyaringan otomatis, di mana **75% resume kandidat langsung tereliminasi pada tahap awal** akibat ketidaktepatan format, ketiadaan kata kunci berbasis kompetensi, atau terdeteksi sebagai teks generik hasil manipulasi otomatis tanpa struktur logis.
 
-### Masalah 2: Kebutaan Kompetensi — *Tidak Tahu Apa yang Tidak Diketahui*
-> **Bagaimana mendiagnosis dan memvisualisasikan kesenjangan keterampilan (*skill gap*) secara objektif, terukur, dan transparan lintas disiplin keilmuan terhadap taksonomi industri modern?**
+### A.3 Transformasi Paradigma: *Cognitive Bridge*, Bukan Pengganti Manusia
+Selaras dengan tema GDI FEST 2026, yaitu ***"Gen-Think: Bridging Human Intelligence in the Digital Era"***, teknologi kecerdasan buatan tidak boleh diposisikan sebagai substitusi yang menyingkirkan manusia dari proses berpikir. Sebaliknya, AI harus dirancang sebagai **jembatan kognitif (*cognitive bridge*)** yang memancing metakognisi, mengasah daya nalar kritis, dan memperkuat kecerdasan intelektual manusia (*human intelligence*).
 
-Sebagian besar mahasiswa tidak mengetahui secara presisi **di mana letak kelemahan kompetensi mereka** relatif terhadap standar industri. Mereka melamar posisi yang tidak sesuai, mengabaikan keterampilan kritis yang seharusnya dikuasai, dan tidak memiliki peta jalan (*roadmap*) untuk menutup kesenjangan tersebut. Tanpa diagnosis yang akurat, setiap upaya peningkatan diri menjadi **tembakan buta tanpa target**.
-
-### Masalah 3: Kegagalan di Ruang Wawancara — *Menang di Kertas, Kalah di Meja*
-> **Bagaimana membangun lingkungan simulasi wawancara kerja yang adaptif dan kognitif, yang mampu melatih penalaran terstruktur berbasis metode STAR dan mendorong metakognisi melalui refleksi mandiri sebelum evaluasi?**
-
-Bahkan ketika berhasil melewati penyaringan ATS, mahasiswa seringkali gagal di tahap wawancara karena **ketidakmampuan mengartikulasikan pengalaman secara terstruktur**. Mereka menjawab pertanyaan dengan cerita yang bertele-tele, melompat-lompat kronologis, dan tidak mampu menunjukkan dampak konkret dari tindakan mereka. Tidak ada ruang latihan yang aman (*safe practice environment*) yang mengajarkan mereka **cara berpikir** — bukan hanya **apa yang harus dijawab**.
-
----
-
-## 3. ANALISIS KEBUTUHAN DAN URGENSI MASALAH
-
-### 3.1 Analisis Kebutuhan Pengguna (*User Needs Analysis*)
-
-Berdasarkan observasi lapangan dan studi literatur, empat kebutuhan mendasar pengguna teridentifikasi:
-
-| No | Kebutuhan Pengguna | Deskripsi | Status Solusi Saat Ini |
-|:---:|:---|:---|:---:|
-| 1 | **Efisiensi & Kerapian CV berstandar ATS** | Mahasiswa membutuhkan alat yang cepat, tidak membingungkan, dan menghasilkan CV dengan tata letak profesional yang lolos ATS — dilengkapi ekspor `.pdf` langsung tanpa hambatan *pop-up blocker*. | ❌ Tidak tersedia secara terintegrasi |
-| 2 | **Bimbingan Kognitif Terarah** | Mahasiswa yang kesulitan menguantifikasi pencapaian membutuhkan pertanyaan pemantik (*scaffolding guidance*) yang membimbing ingatan, **bukan** teks palsu buatan mesin. | ❌ AI generatif justru menghilangkan kebutuhan berpikir |
-| 3 | **Aksesibilitas Multidisiplin** | Mahasiswa dari berbagai latar belakang (IT, Manajemen, Pemasaran, Keuangan, SDM) membutuhkan platform yang mengakomodasi jalur karier mereka — bukan hanya peran teknologi. | ❌ Platform yang ada bias ke sektor IT |
-| 4 | **Privasi & Kendali Data (*Human-in-the-Loop*)** | Mahasiswa berhak atas perlindungan identitas digital dan kendali mutlak untuk menyetujui, mengedit, atau menolak setiap rekomendasi AI. | ❌ Sebagian besar AI bersifat *black-box* |
-
-### 3.2 Urgensi Masalah — *Apa yang Terjadi Jika Kita Tidak Bertindak Sekarang?*
-
-Jika tidak ada intervensi teknologi edukatif yang dirancang dengan benar, maka:
-
-**🔴 Dalam 1–2 tahun ke depan:**
-Generasi lulusan 2026–2027 akan menjadi **angkatan pertama yang sepenuhnya tumbuh di era AI generatif** — dan juga angkatan pertama yang paling rentan terhadap eliminasi pada tahap awal seleksi korporasi modern. Perusahaan-perusahaan besar kini mulai menggunakan **verifikasi integritas berbasis AI** yang mendeteksi resume hasil *copy-paste* dari ChatGPT.
-
-**🔴 Dalam 3–5 tahun ke depan:**
-*Skills mismatch* akan semakin melebar. WEF memproyeksikan bahwa **83 juta pekerjaan akan hilang** sementara **69 juta pekerjaan baru akan tercipta** pada 2027 — pekerjaan yang membutuhkan keterampilan yang tidak diajarkan oleh sistem pendidikan tradisional. Mahasiswa tanpa peta kompetensi yang akurat akan semakin tertinggal.
-
-**🔴 Dampak sistemik jangka panjang:**
-Kepercayaan industri terhadap kualitas lulusan perguruan tinggi Indonesia akan terdegradasi. Perusahaan akan memilih merekrut talenta asing atau mengandalkan otomatisasi penuh, memarjinalkan tenaga kerja terdidik domestik yang seharusnya menjadi motor penggerak ekonomi nasional.
-
-**Menyediakan solusi edukatif sebelum mahasiswa lulus adalah langkah preventif strategis demi menyelamatkan daya saing talenta nasional.** Inilah urgensi CAREERSTUDENT AI.
+Atas dasar pertimbangan mendesak tersebut, **CAREERSTUDENT AI** dirancang sebagai solusi pedagogis digital yang mendampingi mahasiswa mempersiapkan karier masa depan secara bermartabat, terukur, dan berlandaskan kedaulatan berpikir mandiri.
 
 ---
 
-## 4. SOLUSI YANG DITAWARKAN (KONSEP INOVASI)
+## B. PROBLEM STATEMENT (RUMUSAN MASALAH)
 
-### *CAREERSTUDENT AI — Bukan AI yang Menggantikan Pikiran. AI yang Mempertajam Pikiran.*
+Berdasarkan analisis latar belakang di atas, tiga rumusan masalah utama yang dijawab oleh inovasi ini dirumuskan sebagai berikut:
 
-**CAREERSTUDENT AI** adalah ekosistem pendamping karier adaptif berbasis web progresif (PWA) yang mengintegrasikan **4 modul kognitif saling terhubung**, dirancang dengan filosofi bahwa AI seharusnya **menjembatani** — bukan menggantikan — kecerdasan manusia. Filosofi ini selaras sempurna dengan tema GDI FEST 2026: ***"Bridging Human Intelligence in the Digital Era."***
+1. **Bagaimana mengatasi ketergantungan mahasiswa pada otomatisasi AI generatif** agar proses penyusunan resume tidak menghilangkan pemahaman substansi pengalaman, menjaga etika portofolio, dan mempertahankan orisinalitas diri mahasiswa?
+2. **Bagaimana mendiagnosis dan memvisualisasikan kesenjangan keterampilan (*skills gap*)** secara objektif, transparan, dan terukur lintas 4 rumpun keilmuan (Teknologi Informasi, Bisnis/Manajemen, Pemasaran Digital, dan Keuangan) terhadap taksonomi industri modern tanpa menggunakan model *black-box*?
+3. **Bagaimana membangun lingkungan simulasi wawancara kerja adaptif** yang mampu melatih penalaran terstruktur berbasis metode STAR (*Situation, Task, Action, Result*) dan mengunci hasil evaluasi AI sebelum mahasiswa menyelesaikan refleksi mandiri?
+
+---
+
+## C. ANALISIS KEBUTUHAN DAN URGENSI MASALAH
+
+### c.1 Analisis Kebutuhan Pengguna (*User Needs Analysis*)
+* **Kebutuhan Efisiensi vs Kerapian CV ATS:** Mahasiswa membutuhkan instrumen penyusunan resume yang cepat, terstruktur, dan menghasilkan berkas berstandar internasional (*Executive Modern Layout* & *Harvard Classic ATS Standard*), dilengkapi kemampuan unduh langsung berkas fisik `.pdf` berbasis vektor tanpa terhambat oleh *browser pop-up blocker*.
+* **Kebutuhan Bimbingan Kognitif Terarah (*Scaffolding Guidance*):** Mahasiswa yang mengalami kesulitan dalam menguantifikasi capaian organisasi memerlukan pertanyaan pemantik kontekstual yang memandu ingatan mereka menggali fakta riil, bukan teks sintetis buatan mesin.
+* **Kebutuhan Aksesibilitas Multidisiplin:** Platform persiapan karier tidak boleh bias terhadap jurusan rekayasa perangkat lunak saja. Mahasiswa dari rumpun Manajemen, Pemasaran, Akuntansi/Keuangan, dan Sumber Daya Manusia membutuhkan panduan karier yang relevan dengan taksonomi profesi mereka.
+* **Kebutuhan Privasi & Perlindungan Data Sensitif (*PII Redaction Guard*):** Dalam standar rekrutmen profesional modern, mencantumkan data pribadi sensitif seperti NIK (Nomor Induk Kependudukan) atau nomor KTP sangat berisiko memicu pencurian identitas (*identity theft*). Mahasiswa membutuhkan sistem yang memiliki fitur **Peringatan & Sensor Otomatis Data Sensitif (PII Redaction)** untuk mencegah kebocoran data pribadi ke publik.
+* **Kebutuhan Kedaulatan Keputusan (*Human-in-the-Loop*):** Mahasiswa berhak memegang kendali penuh atas setiap kalimat yang merepresentasikan diri mereka di hadapan calon pemberi kerja.
+
+### c.2 Urgensi Masalah (*Urgency of Inaction*)
+Apabila ketiadaan intervensi terhadap fenomena *vibe-applying* dibiarkan berlarut-larut, dampak sistemik yang akan terjadi meliputi:
+* **Jangka Pendek (1–2 Tahun):** Angkatan lulusan baru akan menghadapi tingkat penolakan massal pada fase uji kompetensi korporasi modern yang telah menerapkan verifikasi integritas berbasis AI.
+* **Jangka Menengah (3–5 Tahun):** Kesenjangan kompetensi nasional (*national skills gap*) akan semakin melebar. Industri multinasional akan enggan menyerap talenta domestik karena rendahnya keandalan portofolio pelamar.
+* **Dampak Sistemik Jangka Panjang:** Terjadinya erosi daya nalar kritis pada generasi muda terdidik, mengubah calon intelektual bangsa menjadi sekadar konsumen pasif teknologi.
+
+---
+
+## D. SOLUSI YANG DITAWARKAN (KONSEP INOVASI)
+
+**CAREERSTUDENT AI** mengintegrasikan 4 modul kognitif yang saling terhubung, berlandaskan filosofi *Gen-Think: Bridging Human Intelligence in the Digital Era*.
 
 ```mermaid
 flowchart TD
-    subgraph MOD01["🔷 MOD-01: Interactive CV Analyzer & Fast Builder"]
-        FB["Formulir Cepat (Fast Builder)\n4 Tab Terstruktur"] --> Template["Pilihan Template Industri\nModern Executive & Classic ATS"]
-        Template --> Exporter["Ekspor PDF Presisi Tinggi\n(jsPDF Client-Side)"]
-        FB <--> SE["Socratic Questioning Engine\n— Pertanyaan Pemantik Diksi —"]
-        SE --> AG["Explicit Approval Gate\nSetujui ✓ | Edit ✏️ | Tolak ✗"]
+    subgraph MOD01["MOD-01: Interactive CV Analyzer & Fast Builder"]
+        FB["Formulir Cepat (Fast Builder)\n4 Tab Terstruktur"] --> TPL["Pilihan Template Standar Industri\n(Executive Modern & Harvard Classic ATS)"]
+        TPL --> EXP["Ekspor PDF Vektor Presisi Tinggi\n(Client-Side jsPDF Engine)"]
+        FB <--> SE["Socratic Questioning Engine\n(Pertanyaan Pemantik Diksi & Metrik)"]
+        SE --> AG["Explicit Approval Gate\n(Setujui | Edit Manual | Tolak)"]
     end
 
-    subgraph MOD02["🔶 MOD-02: Multidisciplinary Skill-Gap Analysis"]
-        Taxonomy["Taksonomi 4 Rumpun Disiplin\nIT • Bisnis • Pemasaran • Keuangan"] --> Matcher["Matriks Kompetensi Visual\nStrong | Partial | Critical Gap"]
-        Matcher --> Roadmap["Actionable Learning Roadmap\n4 Minggu Bertahap"]
+    subgraph MOD02["MOD-02: Multidisciplinary Skill-Gap Analysis"]
+        TAX["Taksonomi 4 Rumpun Keilmuan\n(IT, Bisnis, Pemasaran, Keuangan)"] --> MAT["Matriks Kompetensi Transparan\n(Strong, Partial, Critical Gap)"]
+        MAT --> RDM["Actionable Learning Roadmap\n(Kurikulum Bertahap 4 Minggu)"]
     end
 
-    subgraph MOD03["🟢 MOD-03: Cognitive Mock Interview Simulator"]
-        RoleSelector["Pilihan Peran & Tipe Interview"] --> DynamicProbe["Dynamic Follow-Up Probe\nAI Adaptif Kontekstual"]
-        DynamicProbe --> SelfReflect["Mandatory Self-Reflection Gate\n⚠️ Kunci Evaluasi AI"]
-        SelfReflect --> STAREval["Evaluasi 4 Dimensi STAR\nSituation • Task • Action • Result"]
+    subgraph MOD03["MOD-03: Cognitive Mock Interview Simulator"]
+        SEL["Pilihan 7 Peran & Tipe Interview\n(Behavioral & Technical)"] --> PROB["Dynamic Follow-Up Probe\n(AI Menantang Argumen Kandidat)"]
+        PROB --> SRG["Mandatory Self-Reflection Gate\n(Hasil Evaluasi AI Terkunci)"]
+        SRG --> STAR["Evaluasi 4 Dimensi STAR\n(Situation, Task, Action, Result)"]
     end
 
-    subgraph MOD04["🟣 MOD-04: Career Discovery & Explainable Job Matching"]
-        CuratedJobs["Dataset Peluang Terkurasi\n7 Peran Lintas Disiplin"] --> XAI["Explainable AI Matching\nMengapa Relevan? & Tantangan?"]
-        XAI --> Bridge["Jembatan Lintas-Modul\nke MOD-02 & MOD-03"]
+    subgraph MOD04["MOD-04: Career Discovery & Explainable Job Matching"]
+        CUR["Dataset Peluang Industri Terkurasi"] --> XAI["Explainable AI (XAI) Matcher\n(Rumus Weighted Skill-Coverage)"]
+        XAI --> LINK["Jembatan Lintas-Modul\nke MOD-02 & MOD-03"]
     end
 
     MOD01 --> MOD02
@@ -148,213 +133,193 @@ flowchart TD
     MOD04 --> MOD03
 ```
 
-### 4.1 Pilar Inovasi Utama
+### Pilar Konsep Inovasi:
 
-#### 🔷 Pilar 1: *Dual-Mode CV Engine* — Cepat Namun Bermakna
-Berbeda dari alat pembuat CV konvensional yang hanya menyediakan formulir kosong, CAREERSTUDENT AI mengusung **dua mode** yang saling melengkapi:
-- **Fast Builder Mode:** Formulir 4 tab terstruktur (Data Diri → Ringkasan → Pengalaman → Pendidikan) dengan tombol 1-klik template industri dan generator ringkasan AI instan — memungkinkan pembuatan CV rapi dalam waktu kurang dari 5 menit.
-- **Socratic Optimizer Mode:** AI menelaah kelemahan kalimat pengalaman dan mengajukan **pertanyaan pemantik kontekstual** (*"Berapa persen peningkatan yang dicapai? Metodologi apa yang kamu gunakan? Apa yang kamu lakukan berbeda dari anggota tim lainnya?"*). Mahasiswa dipandu untuk menggali memori pengalaman nyata, bukan menerima teks jadi.
+#### 1. Dual-Mode CV Engine (Fast Builder & Socratic Optimizer)
+* **Fast Builder:** Menyediakan alur pengisian 4 tab terstruktur (Data Diri, Ringkasan Profesional, Pengalaman, dan Pendidikan) dengan pilihan template tata letak industri: **Executive Modern Layout** (aksen biru navy elegan, tanggal rata kanan) dan **Harvard Classic ATS Standard** (nama terpusat, garis tipis proporsional).
+* **Harmonisasi Fitur "✨ Buatkan Ringkasan AI" dengan Prinsip HITL:** Tombol ringkasan AI pada Fast Builder **bukanlah** alat pembuatan teks bebas tanpa kendali. Fitur ini membaca riwayat pengalaman dan peran target yang sudah diinput mahasiswa, menyusun draf 3-4 kalimat berbobot, dan **wajib melalui Explicit Approval Gate**. Mahasiswa harus meninjau, mengedit, atau menyetujuinya secara sadar sebelum tersimpan ke dalam dokumen.
+* **Mode Uji Sokratik:** Menelaah kelemahan diksi pasif pada butir pengalaman dan mengajukan pertanyaan dialektika (contoh: *"Berapa persentase peningkatan efisiensi yang berhasil kamu capai? Metodologi apa yang secara spesifik kamu terapkan?"*).
 
-#### 🔶 Pilar 2: *Explicit Approval Gate* — Manusia yang Memutuskan, Bukan Mesin
-AI **dilarang keras** menuliskan teks jadi secara sepihak ke dalam CV. Setiap rekomendasi AI harus melewati **gerbang persetujuan eksplisit**: pengguna wajib meninjau draf dan memilih salah satu dari tiga opsi — ***Setujui***, ***Edit Manual***, atau ***Tolak***. Paradigma *Human-in-the-Loop* ini memastikan bahwa setiap kata dalam resume adalah milik mahasiswa, bukan milik mesin.
+#### 2. Explicit Approval Gate (Human-in-the-Loop)
+AI dilarang keras menimpa teks resume secara otonom. Setiap saran perbaikan wajib ditampilkan dalam dialog komparasi sebelum-sesudah (*before-after comparison*) dengan tiga opsi mutlak di tangan mahasiswa:
+* **Setujui & Terapkan:** Menerima draf setelah pengguna membaca dan menyepakati kebenarannya.
+* **Edit Manual:** Mahasiswa menyempurnakan redaksi kalimat menggunakan kata-kata mereka sendiri.
+* **Tolak Rekomendasi:** Membatalkan rekomendasi AI tanpa konsekuensi paksaan sistem.
 
-#### 🟢 Pilar 3: *Mandatory Self-Reflection Gate* — Berpikir Sebelum Dinilai
-Pada modul simulasi wawancara, hasil penilaian AI **dikunci** sampai kandidat mengisi lembar evaluasi diri (*self-reflection*) pasca-wawancara. Mekanisme ini melatih **metakognisi** — kemampuan berpikir tentang cara berpikir sendiri — yang merupakan keterampilan paling kritikal dan paling jarang diajarkan di perguruan tinggi.
+#### 3. Mandatory Self-Reflection Gate pada Mock Interview
+Pada modul simulasi wawancara, skor dan analisis evaluasi AI **dikunci secara permanen** hingga mahasiswa mengisi formulir refleksi mandiri (*self-assessment*) pasca-sesi tanya jawab. Mekanisme ini memaksa mahasiswa melakukan evaluasi metakognitif: mengenali di mana letak kelemahan argumen mereka sendiri sebelum melihat umpan balik sistem. Evaluasi dinilai secara obyektif pada 4 pilar STAR: *Situation*, *Task*, *Action*, dan *Result*.
 
-#### 🟣 Pilar 4: *Explainable AI (XAI) Discovery* — Transparan, Bukan Kotak Hitam
-Algoritma pencocokan karier menggunakan rumus *weighted skill-coverage* yang **sepenuhnya transparan**: pengguna dapat melihat *mengapa* suatu peran direkomendasikan, *keterampilan apa* yang sudah mereka miliki, dan *tantangan apa* yang perlu diantisipasi. Tidak ada manipulasi *black-box*.
+#### 4. Explainable AI (XAI) & Formulasi Matematis Kecocokan Karier
+Berbeda dari sistem rekomendasi berbasis kotak hitam (*black-box*), algoritma pencocokan karier CAREERSTUDENT AI transparan dan dapat diaudit secara matematis. Derajat keselarasan kandidat dihitung menggunakan rumus **Weighted Skill-Coverage**:
 
----
+$$\text{MatchScore} = \left( \sum_{i=1}^{n} w_i \cdot s_i \right) \times 100\%$$
 
-## 5. TUJUAN DAN DAMPAK INOVASI
+Di mana:
+* $n$ = jumlah total keterampilan yang dipersyaratkan oleh peran target industri.
+* $w_i$ = bobot kepentingan keahlian ke-$i$, dengan ketentuan normalisasi $\sum_{i=1}^{n} w_i = 1,0$ (keahlian *Core/Critical* berbobot 0,5; keahlian *Functional* berbobot 0,3; keahlian *Supporting* berbobot 0,2).
+* $s_i$ = skor penguasaan kandidat pada keahlian ke-$i$:
+  $$s_i = \begin{cases} 1,0 & \text{jika } \textbf{Strong Match} \text{ (dikuasai penuh dan terverifikasi di CV)} \\ 0,5 & \text{jika } \textbf{Partial Match} \text{ (dikuasai sebagian / pemahaman dasar)} \\ 0,0 & \text{jika } \textbf{Critical Gap} \text{ (belum dikuasai sama sekali)} \end{cases}$$
 
-### 5.1 Tujuan Program
-
-1. **Mengembalikan orisinalitas penulisan resume** mahasiswa dengan menghilangkan ketergantungan pasif pada teks otomatis generatif melalui pembiasaan refleksi kritis berbasis dialog Sokratik.
-2. **Menyediakan resume berstandar ATS internasional** dengan format visual profesional dan ekspor PDF presisi tinggi yang dapat langsung digunakan untuk melamar kerja.
-3. **Mempercepat penutupan kesenjangan kompetensi** (*skill gap*) melalui diagnosis lintas disiplin yang objektif dan panduan belajar mingguan terstruktur 4 minggu.
-4. **Membangun kepercayaan diri dan kesiapan mental** kandidat dalam menghadapi wawancara kerja melalui simulasi adaptif berbasis metode STAR dengan evaluasi kognitif mendalam.
-5. **Mendorong kemandirian berpikir kritis** sebagai keunggulan kompetitif yang tidak dapat direplika oleh mesin — selaras dengan semangat *Bridging Human Intelligence*.
-
-### 5.2 Metrik Dampak Terukur (*Measurable Impact Metrics*)
-
-| Indikator Dampak | Target Kuantitatif | Metode Pengukuran |
-|:---|:---|:---|
-| **Peningkatan Skor Keselarasan ATS** | Peningkatan rata-rata ≥ 35% setelah proses Sokratik | Komparasi skor diksi sebelum dan sesudah melalui *Socratic Approval Gate* |
-| **Retensi Pemahaman Portofolio** | ≥ 90% kandidat mampu mempertahankan argumentasi CV saat simulasi wawancara | Validasi pada *Cognitive Mock Interview* (dimensi *Action* & *Result*) |
-| **Efisiensi Pembuatan Resume** | Pembuatan CV rapi & siap pakai < 5 menit | Uji *Fast Builder* dengan template teruji (*Modern* & *Classic*) |
-| **Keberhasilan Ekspor PDF** | 100% *success rate* tanpa pemblokiran browser | Pemanfaatan sintesis PDF *client-side* murni (jsPDF) |
-| **Transparansi Diagnostik** | 100% proses pencocokan dapat ditelusuri pengguna | Audit rumus *Explainable AI* — tanpa nilai arbitrer buatan |
-| **Cakupan Multidisiplin** | 4 rumpun keilmuan, 7+ peran karier | Validasi taksonomi terhadap standar industri terkini |
+Sistem secara eksplisit menjabarkan hasil perhitungan kepada pengguna: *"Mengapa peran ini direkomendasikan"* dan *"Keterampilan kritis apa yang wajib dipelajari dalam roadmap 4 minggu"*.
 
 ---
 
-## 6. TEKNOLOGI YANG DIGUNAKAN
+## E. TUJUAN DAN DAMPAK INOVASI (IMPACT METRICS)
 
-### 6.1 Tabel Arsitektur Teknologi
+### e.1 Tujuan Program
+1. **Meningkatkan Kualitas & Keterbacaan Resume:** Menghasilkan dokumen resume mahasiswa yang 100% kompatibel dengan sistem ATS internasional dan memiliki tata letak visual profesional.
+2. **Memulihkan Kedaulatan Berpikir Mahasiswa:** Mengeliminasi kebiasaan menyalin teks generik AI melalui pembiasaan refleksi pengalaman berbasis metode Sokratik.
+3. **Akselerasi Penutupan Kesenjangan Kompetensi:** Menyediakan rencana aksi belajar terarah selama 4 minggu yang terukur guna menutup *critical gap* lintas disiplin keilmuan.
+4. **Membangun Kemahiran Komunikasi STAR:** Melatih mahasiswa menyusun narasi berbasis dampak dan keputusan saat menghadapi wawancara kerja.
 
-| Komponen | Teknologi | Rasional Pemilihan |
-|:---|:---|:---|
-| **AI Reasoning Model** | Google Gemini 2.5 Flash API | Model inferensi penalaran cepat dengan kemampuan *instruction following* tinggi; dipadu *prompt engineering* persona *Socratic Career Mentor* dan *deterministic heuristic fallback* untuk menjamin konsistensi output. |
-| **Frontend Framework** | Next.js 16 (App Router) & React 19 | Arsitektur *Server Components* dengan kompilasi Turbopack untuk performa maksimal; mendukung *Streaming SSR* dan modularitas tinggi. |
-| **Bahasa Pemrograman** | TypeScript 5 (Strict Mode) | Menjamin *type safety* dan keandalan kode, mencegah *runtime error*, serta menstandardisasi kontrak API antar-modul. |
-| **UI Framework** | Tailwind CSS v4 & Lucide Icons | Desain responsif *mobile-first* dengan aksesibilitas sentuh (≥ 44px *touch target*); sistem kelas utilitas yang menghasilkan *zero unused CSS*. |
-| **Database** | PostgreSQL (Neon Cloud) via Prisma ORM v6 | Basis data relasional *production-grade* dengan koneksi terenkripsi TLS/SSL, *connection pooling* otomatis, dan migrasi skema deklaratif. |
-| **Microservices Engine** | Golang (gRPC-Go) & Protocol Buffers v3 | Komputasi taksonomi keterampilan dan *skill matching* berperforma tinggi (sub-milidetik) menggunakan kontrak standar Buf & Protobuf — memisahkan logika komputasi berat dari *serverless edge*. |
-| **Autentikasi** | NextAuth.js v5 (Google OAuth + Email OTP) | Autentikasi multi-metode dengan sesi ter-*encode* JWT, *max-age* 24 jam, dan sinkronisasi otomatis profil Google ke database. |
-| **Keamanan** | OWASP Top 10 Hardened | Content Security Policy (CSP), X-Frame-Options (anti-clickjacking), X-Content-Type-Options, Referrer-Policy, dan Permissions-Policy terkonfigurasi di level middleware. |
-| **PDF Generation** | jsPDF (Client-Side Vector Engine) | Sintesis berkas `.pdf` langsung di memori peramban; kebal terhadap *browser pop-up blocker* dengan presisi tata letak kertas A4. |
-| **State Management** | Zustand + localStorage | *State management* ringan dan reaktif dengan persistensi ke *localStorage* untuk mendukung *offline-first draft saving*. |
-| **Deployment** | Vercel Serverless & Edge Cloud + PWA | Distribusi global via CDN Vercel dengan *zero cold start*; *Installable* PWA dengan *Service Worker multi-strategy caching* (CacheFirst / NetworkFirst). |
-| **Dataset & Taksonomi** | *Curated Industry Skills Taxonomy* | Pemetaan keterampilan standar industri mencakup 4 rumpun (IT, Bisnis, Pemasaran, Keuangan) dan 7+ peran utama — dikurasi dari standar kompetensi industri terkini. |
+### e.2 Metrik Dampak Terukur (*Measurable Impact Metrics*)
 
-### 6.2 Mengapa Arsitektur Ini?
-
-Pemilihan teknologi bukan sekadar mengikuti tren, melainkan didasarkan pada **tiga prinsip arsitektural**:
-1. ***Performance-First***: Golang gRPC untuk komputasi berat + Vercel Edge untuk distribusi global = latensi minimal bagi pengguna.
-2. ***Security-by-Design***: OWASP Top 10 hardening diterapkan sejak awal (*shift-left security*), bukan ditambahkan sebagai *afterthought*.
-3. ***User Sovereignty***: Setiap keputusan arsitektural mendukung prinsip *Human-in-the-Loop* — data mahasiswa tetap di bawah kendali pengguna.
+| Indikator Dampak | Target Kuantitatif | Metode Pengukuran & Pembuktian |
+| :--- | :--- | :--- |
+| **Peningkatan Skor Keselarasan ATS** | Peningkatan rata-rata $\ge 35\%$ | Pengujian komparasi skor diksi sebelum dan sesudah melalui *Socratic Approval Gate*. |
+| **Retensi Pemahaman Portofolio** | $\ge 90\%$ kandidat mampu mempertahankan argumen CV | Pengujian pada *Cognitive Mock Interview* (evaluasi dimensi *Action* & *Result*). |
+| **Efisiensi Pembuatan Resume Siap Pakai** | Pembuatan CV siap kirim $< 5$ menit | Uji coba *Fast Builder* menggunakan template *Executive Modern* & *Harvard Classic*. |
+| **Keandalan Ekspor Berkas Fisik** | 100% *Success Rate* tanpa pemblokiran | Pemanfaatan sintesis PDF vektor *client-side* murni (`jsPDF`) kebal *pop-up blocker*. |
+| **Transparansi Diagnostik Keterampilan** | 100% *Explainable* tanpa nilai buatan | Validasi keterbukaan kalkulasi formula *Weighted Skill-Coverage*. |
+| **Integritas Privasi Pelamar** | 0% kebocoran data sensitif | Sensor otomatis (*PII Redaction Guard*) terhadap NIK dan identitas sensitif. |
 
 ---
 
-## 7. DESAIN SISTEM / ARSITEKTUR / MOCKUP / PROTOTYPE
+## F. TEKNOLOGI YANG DIGUNAKAN (AI MODEL, FRAMEWORK, DATASET)
 
-### 7.1 Arsitektur Sistem Berlapis (*Tiered System Architecture*)
+| Komponen Arsitektur | Teknologi Terpilih | Rasional Teknis & Nilai Keunggulan |
+| :--- | :--- | :--- |
+| **Frontend Framework** | Next.js 16 (App Router) & React 19 | Performa kompilasi Turbopack sub-detik, arsitektur *Server Components*, dan modularitas antarmuka tinggi. |
+| **Bahasa & Typing** | TypeScript 5 (Strict Mode) | Menjamin keandalan kode (*type safety*), mengeliminasi galat *runtime*, dan standardisasi kontrak antarmuka API. |
+| **Styling & Aksesibilitas** | Tailwind CSS v4 & Lucide Icons | Desain responsif *mobile-first*, kepatuhan target sentuh ($\ge 44\text{px}$ *touch target*), dan penegakan prinsip *zero UI-slop*. |
+| **Platform Deployment** | Vercel Serverless Edge Cloud + PWA | Siap diakses publik via **`https://career-student-ai.vercel.app`**, *Installable* PWA dengan Service Worker *Network-First* & *Cache-First*. |
+| **PDF Generation Engine** | `jspdf` (Client-Side Vector Engine) | Sintesis dokumen fisik `.pdf` langsung di memori peramban; kebal terhadap *browser pop-up blocker* dengan tata letak kertas A4 presisi. |
+| **AI Reasoning Model** | Google Gemini 2.5 Flash API | Inferensi penalaran cepat dengan *prompt engineering* persona *Socratic Career Mentor*, dipadu dengan *deterministic heuristic fallback engine*. |
+| **Manajemen State** | Zustand + LocalStorage | Pengelolaan status data reaktif, ringan, dan persisten di peramban pengguna untuk mendukung *offline-first draft saving*. |
+| **Database & ORM** | PostgreSQL (Neon Cloud) & Prisma 6 | Penyimpanan data relasional terdistribusi *cloud production-grade* dengan koneksi terenkripsi TLS/SSL dan *connection pooling* otomatis. |
+| **Microservices Engine** | Golang (gRPC-Go) & Protocol Buffers v3 | Mesin komputasi performa tinggi independen untuk pemrosesan graf taksonomi dan kalkulasi matriks STAR sub-milidetik, siap skalabilitas tinggi. |
+| **Autentikasi & Keamanan** | NextAuth v5, Google OAuth & OWASP Hardened | Dilengkapi Content Security Policy (CSP), proteksi X-Frame-Options anti-clickjacking, session max-age 24 jam, dan enkripsi JWT. |
+| **Dataset & Taksonomi** | *Curated Industry Skills Taxonomy* (4 Rumpun, 7 Peran Utama) | Pemetaan keterampilan standar industri mencakup IT, Manajemen/MT, Pemasaran Digital, dan Keuangan/Akuntansi. |
 
-Sistem dirancang dengan arsitektur modular yang memisahkan lapisan presentasi, logika kognitif, orkestrasi AI, *microservice* komputasi performa tinggi, dan penyimpanan data terpusat:
+---
+
+## G. DESAIN SISTEM / ARSITEKTUR / MOCKUP / PROTOTYPE
+
+### g.1 Arsitektur Sistem Berlapis (*Tiered System Architecture*)
+
+Sistem dibangun menggunakan arsitektur modular yang memisahkan lapisan presentasi pengguna, lapisan logika *serverless*, mesin *microservice* performa tinggi, orkestrasi AI, dan basis data cloud terenkripsi:
 
 ```mermaid
 graph TD
-    Client["🌐 Klien Web & Mobile\n(PWA — Installable)"] --> UI["Lapisan Presentasi UI/UX\nTailwind CSS • Responsive Layout\nBottomNav (Mobile) • Sidebar (Desktop)"]
-    UI --> Store["Zustand Store\n+ localStorage Persistence\n(Offline-First Draft)"]
+    Client["🌐 Klien Web & PWA Multi-Device\n(Desktop, Tablet, Android, iOS)"] --> UI["Lapisan Presentasi UI/UX\n(Tailwind CSS v4 • Responsive Layout • Accessible Controls)"]
+    UI --> Store["Zustand Store & LocalStorage\n(Offline-First Persistence)"]
 
-    UI --> NextAPI["⚡ Next.js Route Handlers\n(/api — Vercel Serverless)"]
-    
-    NextAPI --> ParserEngine["📄 Resume Parser\n& Input Sanitizer"]
-    NextAPI --> SocraticEngine["🧠 Gemini Socratic Engine\n+ Heuristic Fallback"]
-    NextAPI --> InterviewEngine["🎤 STAR Cognitive\nInterview Simulator"]
-    NextAPI --> MatcherEngine["🔍 Explainable Career\n& Skill-Gap Matcher"]
+    UI --> EdgeAPI["⚡ Next.js Route Handlers on Vercel\n(/api/resume, /api/interview, /api/skillgap)"]
 
-    NextAPI -.->|"gRPC / Protobuf v3"| GoService["🚀 Golang Scoring Microservice\nHigh-Performance Taxonomy\n& STAR Evaluator"]
+    EdgeAPI --> Parser["📄 In-Memory Resume Parser & PII Redaction Guard"]
+    EdgeAPI --> GeminiAI["🧠 Gemini 2.5 Flash Socratic Engine\n(+ Deterministic Heuristic Fallback)"]
+    EdgeAPI --> STARSim["🎤 STAR Cognitive Interview Engine"]
+    EdgeAPI --> XAIMatch["🔍 Explainable Career & Skill-Gap Matcher"]
 
-    NextAPI --> NextAuth["🔐 NextAuth v5\nGoogle OAuth + Email OTP"]
-    NextAuth --> CloudDB[("☁️ PostgreSQL\nNeon Cloud\nvia Prisma ORM")]
+    EdgeAPI -.->|"gRPC / Protobuf v3"| GoEngine["🚀 Golang Scoring Microservice\n(High-Performance Taxonomies & STAR Evaluator)"]
+
+    EdgeAPI --> AuthSecurity["🔐 NextAuth v5 & Google OAuth Provider\n(OWASP Top 10 Security Hardened)"]
+    AuthSecurity --> CloudDB[("☁️ PostgreSQL Database (Neon Cloud)\nvia Prisma ORM (TLS/SSL Connection Pool)")]
 ```
 
-### 7.2 Alur Interaksi Pengguna (*User Journey Flow*)
+### g.2 Antarmuka Pengguna & Rincian Modul Prototipe
+
+Prototipe dirancang secara fungsional untuk memberikan pengalaman pengguna yang intuitif, bersih, dan bebas dari ornamen palsu (*zero UI-slop*):
+
+1. **MOD-01: Interactive CV Analyzer & Fast Builder**
+   * **Pilihan Template Berstandar Industri:** Menyediakan opsi siap pakai meliputi *Executive Modern Layout* (desain eksekutif untuk peran bisnis/manajemen) dan *Harvard Classic ATS Standard* (format klasik formal untuk sektor korporasi dan akademik).
+   * **Fast Builder 4 Tab:** Pengisian data terpisah ke dalam 4 tahapan logis: Data Diri (dilengkapi *PII Redaction Guard*), Ringkasan Eksekutif, Riwayat Pengalaman Berformat Metrik, dan Pendidikan.
+   * **Live Document Preview & PDF Exporter:** Pratinjau visual lembar A4 secara langsung di layar dengan opsi unduh berkas fisik `.pdf` berbasis vektor dan berkas `.txt` ATS polos.
+   * **Socratic Feedback Pane & Approval Gate:** Panel ulasan yang membedah setiap butir kalimat, menyajikan pertanyaan pemantik dialektika, dan menampilkan dialog perbandingan persetujuan eksplisit.
+
+2. **MOD-02: Multidisciplinary Skill-Gap Analysis & Roadmap**
+   * **Selector Terkategori Berdasarkan 4 Sektor Keilmuan:** Menu pemilih peran target yang dikelompokkan secara rapi mencakup rumpun Teknologi Informasi, Bisnis/Manajemen, Pemasaran Digital, dan Keuangan.
+   * **Matriks Kompetensi Visual:** Visualisasi status keahlian kandidat dalam tiga kategori warna: *Strong Match* (hijau), *Partial Match* (kuning), dan *Critical Gap* (merah).
+   * **Actionable Learning Roadmap:** Panduan kurikulum mingguan 4 tahap yang memberikan rekomendasi materi dan proyek konkret untuk menutup kesenjangan kompetensi teridentifikasi.
+
+3. **MOD-03: Cognitive Mock Interview Simulator**
+   * **Bilah Percakapan Adaptif:** Pewawancara AI mengajukan pertanyaan berbasis konteks jawaban sebelumnya menggunakan teknik *dynamic follow-up probes*.
+   * **Mandatory Self-Reflection Gate:** Panel pengunci yang mewajibkan kandidat merefleksikan performa mereka sebelum rincian skor dibuka.
+   * **Rincian Evaluasi STAR:** Ulasan komprehensif pada aspek *Situation*, *Task*, *Action*, dan *Result* disertai saran perbaikan bahasa tubuh verbal dan artikulasi diksi.
+
+4. **MOD-04: Career Discovery & Explainable Job Matching**
+   * **Pencocokan Transparan Berbasis Bobot:** Menampilkan skor persentase keselarasan karier yang dapat ditelusuri per komponen keahlian.
+   * **Penjelasan Konseptual XAI:** Kartu informasi yang merinci *"Mengapa peran ini relevan bagi Anda"* serta *"Tantangan industri yang perlu diantisipasi"*.
+
+---
+
+## H. IMPLEMENTASI DAN ROADMAP PENGEMBANGAN
+
+### h.1 Status Implementasi Prototipe Saat Ini (*Production-Ready Status*)
+Seluruh modul inti aplikasi (Fase 1) telah selesai dibangun **100%** dan telah beroperasi secara penuh di lingkungan produksi cloud:
+* **Akses Publik Produksi:** **`https://career-student-ai.vercel.app`**
+* **Repositori Kode Sumber:** **`https://github.com/rikiardiansyah-web/CareerStudentAI`**
+* **Audit Kualitas Perangkat Lunak:** Lulus verifikasi kompilasi produksi Next.js 16 Turbopack dengan **0 error** pada 14 rute statis dan dinamis.
+* **Audit Fungsional (Blackbox):** Lulus **42 dari 42 skenario pengujian fungsional (100% PASS)** mencakup seluruh modul.
+* **Audit Keamanan (Pentest):** Lulus verifikasi terhadap seluruh 10 kategori kerentanan **OWASP Top 10**.
+
+### h.2 Rencana Pengembangan Lanjutan (*Development Roadmap*)
 
 ```mermaid
 flowchart LR
-    A["👤 Mahasiswa\nMasuk / Daftar"] --> B["🏠 Dashboard\nPilih Modul"]
-    B --> C["📝 MOD-01\nBangun CV\n(Fast Builder)"]
-    B --> D["📊 MOD-02\nAnalisis\nSkill Gap"]
-    B --> E["🎯 MOD-04\nJelajahi\nKarier"]
-    B --> F["🎤 MOD-03\nSimulasi\nWawancara"]
-    
-    C --> C1["Isi 4 Tab\nData Diri → Ringkasan\n→ Pengalaman → Pendidikan"]
-    C1 --> C2["✨ AI Socratic\nReview & Pertanyaan\nPemantik"]
-    C2 --> C3["✅ Approval Gate\nSetujui / Edit / Tolak"]
-    C3 --> C4["📄 Ekspor PDF\nTemplate Modern\natau Classic"]
-
-    D --> D1["Pilih Rumpun\n& Peran Target"]
-    D1 --> D2["📈 Matriks\nKompetensi Visual"]
-    D2 --> D3["🗺️ Roadmap\nBelajar 4 Minggu"]
-
-    F --> F1["Pilih Peran\n& Tipe Interview"]
-    F1 --> F2["💬 Sesi Tanya\nJawab Adaptif"]
-    F2 --> F3["📝 Self-Reflection\nWajib Diisi"]
-    F3 --> F4["⭐ Evaluasi STAR\n4 Dimensi"]
+    F1["✅ Fase 1 (Selesai)\nMVP Core HITL, PWA Cloud,\n4 Modul & Ekspor jsPDF"] --> F2["📋 Fase 2 (Bulan 1–2)\nPilot Project di 5 Kampus Mitra\n& Integrasi Suara WebRTC"]
+    F2 --> F3["🤝 Fase 3 (Bulan 3–4)\nKemitraan CDC Kampus &\nVerifikasi Portofolio Institusi"]
+    F3 --> F4["📊 Fase 4 (Bulan 5–6)\nDashboard Analitik Skill-Gap\nuntuk Program Studi & Dekanat"]
 ```
 
-### 7.3 Deskripsi Modul Prototipe
-
-**MOD-01: Interactive CV Analyzer & Fast Builder**
-- *Landing Hub* dengan pilihan 1-klik template industri: *Modern Executive* dan *Classic ATS*.
-- *Fast Builder* — antarmuka 4 tab yang bersih dan intuitif dengan tombol *"✨ Buatkan Ringkasan AI"* instan.
-- *Document Live Preview* — tampilan lembar kertas A4 nyata dengan bayangan lembut dan tombol unduh ke format `.pdf` dan `.txt`.
-- *Socratic Feedback Pane* — panel kritik objektif, pertanyaan pemantik Sokratik, dan gerbang persetujuan eksplisit.
-
-**MOD-02: Multidisciplinary Skill-Gap Analysis**
-- Pemilih peran multi-kategori dengan `<optgroup>` mencakup 4 sektor keilmuan (IT, Bisnis, Pemasaran, Keuangan).
-- Matriks kompetensi visual dengan indikator warna transparan: *Strong* (hijau), *Partial* (kuning), *Critical Gap* (merah).
-- *Actionable Learning Roadmap* bertahap 4 minggu yang dapat diaktifkan pengguna.
-
-**MOD-03: Cognitive Mock Interview Simulator**
-- Bilah percakapan adaptif dengan *dynamic follow-up probes* berbasis konteks jawaban sebelumnya.
-- Lembar refleksi mandiri **wajib** (*mandatory*) sebelum kunci evaluasi AI terbuka.
-- Rincian penilaian 4 dimensi STAR (*Situation, Task, Action, Result*) dengan wawasan kognitif mendalam.
-
-**MOD-04: Career Discovery & Explainable Job Matching**
-- Filter peran multidisiplin dengan kartu lowongan transparan.
-- Modul *Explainable AI* yang menjabarkan ***"Mengapa peran ini relevan untuk Anda"*** dan ***"Tantangan yang perlu Anda antisipasi"*** — berbasis rumus *weighted skill-coverage* yang dapat ditelusuri.
-
-### 7.4 Akses Prototipe Langsung
-
-Prototipe **CAREERSTUDENT AI** telah selesai diimplementasikan 100% dan dapat diakses langsung pada:
-
-> 🌐 **https://career-student-ai.vercel.app**
-
-> 📦 **Repositori Kode Sumber:** https://github.com/rikiardiansyah-web/CareerStudentAI
+| Periode | Milestone Utama | Luaran & Sasaran Utama |
+| :--- | :--- | :--- |
+| **Fase 1** *(Tuntas)* | **MVP Core Production** | Aplikasi PWA lengkap 4 modul live di Vercel Cloud, PostgreSQL Neon, 42 skenario uji lolos 100%. |
+| **Bulan 1–2** | **Pilot Testing di 5 Kampus Mitra** | Uji coba lapangan terbatas terhadap 300+ mahasiswa tingkat akhir di **5 universitas mitra**; evaluasi pengalaman pengguna (*User Experience Questionnaire* / UEQ). |
+| **Bulan 2** | **Integrasi Suara & WebRTC** | Pengembangan fitur latihan simulasi wawancara berbasis suara dua arah (*voice-to-voice*) berlatensi rendah untuk meningkatkan realisme interaksi. |
+| **Bulan 3–4** | **Kemitraan Career Center (CDC)** | Integrasi sistem dengan Pusat Pengembangan Karier Perguruan Tinggi guna pemantauan indeks kesiapan kerja angkatan lulusan. |
+| **Bulan 5–6** | **Dashboard Analitik Institusional** | Penyediaan dasbor agregat analitik *skills gap* bagi pimpinan program studi untuk mendukung penyesuaian kurikulum berbasis kebutuhan nyata industri. |
 
 ---
 
-## 8. IMPLEMENTASI ATAU RENCANA IMPLEMENTASI (ROADMAP PENGEMBANGAN)
+## I. PENUTUP
 
-### 8.1 Status Implementasi Saat Ini
+**CAREERSTUDENT AI** bukan sekadar aplikasi pembuat resume digital. Inovasi ini adalah sebuah **gerakan rekayasa pedagogis** untuk mengembalikan martabat, kedaulatan berpikir, dan orisinalitas penalaran kepada mahasiswa Indonesia di tengah gelombang disrupsi kecerdasan buatan.
 
-Seluruh modul inti fungsional telah selesai diimplementasikan **100%** dan lulus:
-- ✅ Audit kompilasi produksi Next.js (`npm run build`) dengan **0 error** pada 14 rute aplikasi.
-- ✅ **42 skenario *blackbox testing*** — seluruhnya berstatus **PASS**.
-- ✅ **Pengujian penetrasi (*penetration testing*)** terhadap **OWASP Top 10** — seluruh kategori berstatus **PASS**.
-- ✅ Deployment sukses ke **Vercel Cloud** — aksesibel secara global.
+Dengan menolak otomatisasi buta dan menggantikannya dengan filosofi ***Human-in-the-Loop***, dialog Sokratik, transparansi algoritma *Explainable AI*, serta fondasi arsitektur perangkat lunak skala industri yang telah teruji, CAREERSTUDENT AI membuktikan bahwa kecerdasan buatan dapat menjadi jembatan penguat nalar manusia—bukan penggantinya.
 
-### 8.2 Roadmap Pengembangan Lanjutan
-
-```mermaid
-flowchart LR
-    F1["✅ Fase 1\n(Selesai)\nMVP Core\n4 Modul HITL\nPWA & PDF Export"] --> F2["📋 Fase 2\n(Bulan 1–2)\nUji Pengguna\n5 Kampus Mitra\nVoice Interview"]
-    F2 --> F3["🤝 Fase 3\n(Bulan 3–4)\nKemitraan CDC\nVerifikasi\nPortofolio"]
-    F3 --> F4["📊 Fase 4\n(Bulan 5–6)\nAnalitik\nInstitusional\nDashboard Dosen"]
-```
-
-| Periode | Milestone Utama | Luaran & Sasaran |
-|:---|:---|:---|
-| **Fase 1** *(Selesai)* | MVP Core — 4 Modul HITL, PWA, PDF Export | Prototipe fungsional teruji dengan 42 skenario *blackbox test* dan audit keamanan OWASP Top 10. |
-| **Bulan 1–2** | *Pilot Project Testing* | Pengujian lapangan terhadap 300+ mahasiswa tingkat akhir di 5 universitas mitra; evaluasi *User Experience Questionnaire (UEQ)*. |
-| **Bulan 2** | Integrasi Suara & WebRTC | Penambahan fitur latihan wawancara suara dua arah (*voice-to-voice*) untuk meningkatkan realisme simulasi. |
-| **Bulan 3–4** | Kemitraan *Career Development Center* (CDC) | Integrasi dengan Pusat Karier Perguruan Tinggi untuk memantau indeks kesiapan kerja per program studi. |
-| **Bulan 5–6** | Dashboard Analitik Institusional | Penyediaan analitik agregat *skill gap* bagi program studi untuk penyesuaian kurikulum berbasis kebutuhan industri. |
-
-### 8.3 Rencana Keberlanjutan (*Sustainability Plan*)
-
-CAREERSTUDENT AI dirancang untuk **keberlanjutan jangka panjang** melalui:
-1. **Model Freemium:** Fitur inti gratis untuk seluruh mahasiswa; fitur premium (analitik lanjutan, integrasi institusional) untuk kampus mitra.
-2. **Arsitektur Modular:** Setiap modul dapat diperbarui dan ditingkatkan secara independen tanpa mengganggu modul lain.
-3. **Komunitas Kontribusi Terbuka:** Kode sumber terbuka di GitHub untuk mendorong kolaborasi dan kontribusi dari komunitas pengembang pendidikan.
+Melalui ajang **GDI FEST 2026**, Tim AQUAMAN dari Universitas Teknokrat Indonesia siap menghadirkan kontribusi nyata bagi peningkatan daya saing talenta muda Indonesia menuju panggung profesional global.
 
 ---
 
-## 9. PENUTUP
+## J. REFERENSI ILMIAH & LAMPIRAN
 
-**CAREERSTUDENT AI** bukan sekadar aplikasi pembuat resume.
+### j.1 Referensi Ilmiah
 
-Ini adalah **sebuah pernyataan** — bahwa di era ketika kecerdasan buatan mampu menulis, menganalisis, dan bahkan berpikir atas nama manusia, justru saat itulah kita paling membutuhkan teknologi yang **mengembalikan kedaulatan berpikir kepada manusia**.
+1. **Amershi, S., Weld, D., Vorvoreanu, M., et al.** (2019). Guidelines for Human-AI Interaction. *Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems*, 1–13. https://doi.org/10.1145/3290605.3300233
+2. **Badan Pusat Statistik.** (2024). *Keadaan Ketenagakerjaan Indonesia Februari & Agustus 2024: Tingkat Pengangguran Terbuka Menurut Tingkat Pendidikan Tertinggi yang Ditamatkan*. Jakarta: Badan Pusat Statistik Republik Indonesia.
+3. **Bloom, B. S.** (1956). *Taxonomy of Educational Objectives: The Classification of Educational Goals*. New York: David McKay Company.
+4. **Dwivedi, Y. K., Kshetri, N., Hughes, L., et al.** (2023). Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy. *International Journal of Information Management*, 71, 102642. https://doi.org/10.1016/j.ijinfomgt.2023.102642
+5. **LinkedIn Economic Graph.** (2024). *Global Talent Trends: The AI Era and Skills-First Hiring*. LinkedIn Corporation. https://economicgraph.linkedin.com/research/global-talent-trends
+6. **Paul, R., & Elder, L.** (2019). *The Thinker's Guide to Socratic Questioning*. Foundation for Critical Thinking Press.
+7. **Shneiderman, B.** (2022). *Human-Centered AI*. Oxford: Oxford University Press.
+8. **World Economic Forum.** (2023). *The Future of Jobs Report 2023*. Geneva: World Economic Forum. https://www.weforum.org/publications/the-future-of-jobs-report-2023/
 
-Setiap mahasiswa di Indonesia berhak memiliki akses terhadap pendampingan karier yang cerdas, transparan, dan menghormati orisinalitas mereka. Bukan AI yang mendikte apa yang harus mereka tulis di resume. Bukan AI yang menjawab pertanyaan wawancara atas nama mereka. Melainkan **AI yang membimbing mereka menemukan jawaban terbaik dari dalam diri mereka sendiri** — melalui pertanyaan yang tepat, pada waktu yang tepat, dengan cara yang tepat.
+### j.2 Lampiran: Tautan Sumber Daya & Demonstrasi Produk
 
-Dengan menyelaraskan filosofi ***Human-in-the-Loop***, dialog Sokratik, keterbukaan algoritma (*Explainable AI*), dan arsitektur teknologi *production-grade* yang telah teruji — CAREERSTUDENT AI menawarkan **jembatan nyata antara kecerdasan manusia dan kecerdasan digital**, selaras dengan semangat Gen-Think: ***Bridging Human Intelligence in the Digital Era.***
-
-Melalui dukungan kompetisi **GDI FEST 2026**, inovasi ini siap diakselerasi menjadi solusi berskala nasional yang menjembatani jutaan talenta akademis Indonesia menuju karier profesional yang **berdampak, berdaya saing, dan bermartabat**.
+* **Akses Prototipe Langsung (Live Cloud Deployment):** [https://career-student-ai.vercel.app](https://career-student-ai.vercel.app)
+* **Repositori Kode Sumber Terbuka (GitHub):** [https://github.com/rikiardiansyah-web/CareerStudentAI](https://github.com/rikiardiansyah-web/CareerStudentAI)
+* **Laporan Kualitas Perangkat Lunak (Blackbox Testing Report):** `BLACKBOX_TEST_REPORT.md` (42 Test Cases, 100% PASS)
+* **Laporan Audit Keamanan Sistem (Penetration Testing Report):** `PENTEST_REPORT.md` (OWASP Top 10 Hardened)
+* **Laporan Pemecahan Cacat Sistem (Software Debugging Report):** `LAPORAN_DEBUGGING.md` (8 Critical Cases Resolved)
+* **Dokumentasi Presentasi (12-Slide Pitch Deck):** `PITCH_DECK.md`
+* **Video Demonstrasi Produk (HD 3 Menit):** Tautan video demonstrasi fungsional resolusi tinggi (maksimal 3 menit) tersedia dan dapat diakses melalui repositori resmi proyek.
 
 ---
 
-## 10. REFERENSI ILMIAH DAN LAMPIRAN
+<div align="center">
 
-### 10.1 Referensi Ilmiah
+**TIM AQUAMAN TEKNOKRAT — UNIVERSITAS TEKNOKRAT INDONESIA**
+*Bandar Lampung, 20 Oktober 2026*
 
-*(Akan dilengkapi)*
-
-### 10.2 Lampiran
-
-- **Prototipe Langsung:** https://career-student-ai.vercel.app
-- **Repositori Kode Sumber:** https://github.com/rikiardiansyah-web/CareerStudentAI
+</div>

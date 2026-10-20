@@ -100,7 +100,7 @@ export function CvExportModal({ isOpen, onClose, sections }: CvExportModalProps)
 
       if (selectedStyle === "modern") {
         // =====================================================================
-        // TEMPLATE 1: MODERN EXECUTIVE (GAYA ALFREDO TORRES)
+        // TEMPLATE 1: EXECUTIVE MODERN LAYOUT
         // =====================================================================
         // Header Kiri: Nama Besar Biru Navy + Subtitle
         doc.setFont("helvetica", "bold");
@@ -209,7 +209,7 @@ export function CvExportModal({ isOpen, onClose, sections }: CvExportModalProps)
         }
       } else {
         // =====================================================================
-        // TEMPLATE 2: CLASSIC ATS MINIMALIST (GAYA MARIANA NAPOLITANI)
+        // TEMPLATE 2: CLASSIC ATS STANDARD (HARVARD MINIMALIST)
         // =====================================================================
         // Header Tengah (Centered)
         doc.setFont("helvetica", "bold");
@@ -364,7 +364,7 @@ export function CvExportModal({ isOpen, onClose, sections }: CvExportModalProps)
             }`}
           >
             <LayoutTemplate className="w-4 h-4 text-blue-700" />
-            <span>Gaya 1: Modern Executive (Alfredo Torres)</span>
+            <span>Gaya 1: Executive Modern Layout</span>
           </button>
 
           <button
@@ -379,7 +379,7 @@ export function CvExportModal({ isOpen, onClose, sections }: CvExportModalProps)
             }`}
           >
             <Sparkles className="w-4 h-4 text-indigo-600" />
-            <span>Gaya 2: Classic ATS (Mariana Napolitani)</span>
+            <span>Gaya 2: Harvard Classic ATS Standard</span>
           </button>
         </div>
 

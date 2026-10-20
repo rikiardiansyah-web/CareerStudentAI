@@ -284,7 +284,7 @@ export function CvModuleContainer() {
               Buat CV Profesional Tanpa Ribet
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-lg mx-auto">
-              Pilih cara tercepat yang kamu sukai: mulai dari template teruji (Alfredo Torres / Mariana Napolitani), isi formulir ringkas, atau unggah CV yang sudah kamu miliki.
+              Pilih cara tercepat yang kamu sukai: mulai dari template teruji (Executive Modern / Classic ATS Standard), isi formulir ringkas, atau unggah CV yang sudah kamu miliki.
             </p>
 
             {/* Sub-tab Chooser */}
