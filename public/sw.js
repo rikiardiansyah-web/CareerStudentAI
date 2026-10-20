@@ -1,5 +1,5 @@
 // CAREERSTUDENT AI — Progressive Web App Service Worker
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.0.1';
 const STATIC_CACHE = `career-static-${CACHE_VERSION}`;
 const DYNAMIC_CACHE = `career-dynamic-${CACHE_VERSION}`;
 
@@ -8,6 +8,7 @@ const APP_SHELL = [
   '/',
   '/manifest.json',
   '/offline.html',
+  '/icons/logo-cs.jpg',
   '/icons/icon-192x192.svg',
   '/icons/icon-512x512.svg'
 ];

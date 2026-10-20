@@ -44,7 +44,7 @@ export function AppHeader() {
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo & Philosophy Tag */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3" suppressHydrationWarning>
           <Image
             src="/icons/logo-cs.jpg"
             alt="CareerStudent AI Logo"
