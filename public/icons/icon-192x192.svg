@@ -1,15 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
-  <rect width="192" height="192" rx="38" fill="#0F172A"/>
-  <!-- Safe Zone Inner Group (80% diameter) -->
-  <g transform="translate(19.2, 19.2) scale(0.8)">
-    <!-- Graduation Cap / Diamond Motif -->
-    <path d="M96 24 L168 64 L96 104 L24 64 Z" fill="#4F46E5" stroke="#6366F1" stroke-width="4"/>
-    <!-- Tassel -->
-    <path d="M152 73 L152 116 C152 120 148 124 144 124 C140 124 136 120 136 116 L136 73" stroke="#14B8A6" stroke-width="4" stroke-linecap="round"/>
-    <!-- Cognitive Node / Bridge Arc -->
-    <path d="M48 82 L48 124 C48 144 68 160 96 160 C124 160 144 144 144 124 L144 116" fill="none" stroke="#6366F1" stroke-width="6" stroke-linecap="round"/>
-    <!-- Central Socratic Insight Spark -->
-    <circle cx="96" cy="120" r="12" fill="#14B8A6"/>
-    <circle cx="96" cy="120" r="6" fill="#FFFFFF"/>
-  </g>
+  <rect width="192" height="192" rx="38" fill="#FFFFFF"/>
+  <!-- C letter - dark navy -->
+  <path d="M82 46 C38 46 20 72 20 96 C20 120 38 146 82 146 C92 146 100 143 106 138" 
+        fill="none" stroke="#0A1F44" stroke-width="18" stroke-linecap="round"/>
+  <!-- Inner C ring -->
+  <path d="M82 62 C50 62 38 78 38 96 C38 114 50 130 82 130 C88 130 93 128 97 125" 
+        fill="none" stroke="#0A1F44" stroke-width="3" stroke-linecap="round"/>
+  <!-- S letter - dark navy -->
+  <path d="M108 62 C130 54 162 58 158 82 C155 100 126 100 118 108 C108 118 112 140 148 136" 
+        fill="none" stroke="#0A1F44" stroke-width="18" stroke-linecap="round"/>
+  <!-- Infinity bridge / teal connector between C and S -->
+  <path d="M72 80 C80 70 95 60 108 72 C120 84 110 100 100 108 C90 116 78 120 72 112 C66 104 64 90 72 80 Z" 
+        fill="#1BA3A6" opacity="0.85"/>
+  <!-- Inner eye of C - teal accent -->
+  <circle cx="58" cy="96" r="10" fill="#1BA3A6"/>
+  <circle cx="58" cy="96" r="5" fill="#FFFFFF"/>
 </svg>

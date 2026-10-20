@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     title: "CareerAI",
   },
   icons: {
-    icon: "/icons/icon-192x192.svg",
-    apple: "/icons/icon-192x192.svg",
+    icon: "/icons/logo-cs.jpg",
+    apple: "/icons/logo-cs.jpg",
   },
 };
 

@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Download, ShieldCheck, Target, Sparkles, LogIn, LogOut } from "lucide-react";
+import { Download, ShieldCheck, Target, LogIn, LogOut } from "lucide-react";
+import Image from "next/image";
 import { useSession, signOut } from "next-auth/react";
 import { usePwaInstall } from "@/hooks/usePwaInstall";
 import { useAppStore } from "@/lib/store/useAppStore";
@@ -44,9 +45,14 @@ export function AppHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo & Philosophy Tag */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-slate-900 flex items-center justify-center text-white shadow-sm">
-            <Sparkles className="w-5 h-5 text-indigo-400" />
-          </div>
+          <Image
+            src="/icons/logo-cs.jpg"
+            alt="CareerStudent AI Logo"
+            width={36}
+            height={36}
+            className="w-9 h-9 rounded-xl shadow-sm object-cover"
+            priority
+          />
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-base md:text-lg tracking-tight text-slate-900 font-heading">
