@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { generateSocraticCritique } from "@/lib/geminiSocratic";
 
+const MAX_BULLET_LENGTH = 2000;
+
 export async function POST(req: NextRequest) {
   try {
     const { bulletText, targetRole } = await req.json();
@@ -12,9 +14,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const sanitizedBullet = bulletText.trim().slice(0, MAX_BULLET_LENGTH);
+    const sanitizedRole = (typeof targetRole === "string")
+      ? targetRole.trim().slice(0, 100)
+      : "Junior Professional";
+
     const analysis = await generateSocraticCritique(
-      bulletText,
-      targetRole || "Junior Professional"
+      sanitizedBullet,
+      sanitizedRole
     );
 
     return NextResponse.json({

@@ -1,8 +1,8 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import Credentials from "next-auth/providers/credentials";
-import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
+import { verifyPassword } from "@/lib/security/password";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   trustHost: true,
@@ -20,6 +20,45 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           }),
         ]
       : []),
+
+    // 1. Email & Salted Encrypted Password Provider (Enterprise Scrypt)
+    Credentials({
+      id: "credentials",
+      name: "Email & Password",
+      credentials: {
+        email: { label: "Email", type: "email" },
+        password: { label: "Kata Sandi", type: "password" },
+      },
+      async authorize(credentials) {
+        if (!credentials?.email || !credentials?.password) {
+          throw new Error("Email dan kata sandi wajib diisi.");
+        }
+
+        const email = (credentials.email as string).toLowerCase().trim();
+        const plainPassword = credentials.password as string;
+
+        const user = await prisma.userProfile.findUnique({
+          where: { email },
+        });
+
+        if (!user || !user.password) {
+          throw new Error("Akun tidak ditemukan atau belum mengatur kata sandi.");
+        }
+
+        // Constant-time verification using crypto.timingSafeEqual
+        const isValid = await verifyPassword(plainPassword, user.password);
+        if (!isValid) {
+          throw new Error("Email atau kata sandi yang Anda masukkan salah.");
+        }
+
+        return {
+          id: user.id,
+          name: user.name,
+          email: user.email,
+          image: user.image,
+        };
+      },
+    }),
 
     // 2. Email OTP / Secure One-Time Passcode Provider
     Credentials({
@@ -62,7 +101,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           },
         });
 
-        // Cari atau buat UserProfile di SQLite
+        // Cari atau buat UserProfile
         let user = await prisma.userProfile.findUnique({
           where: { email },
         });

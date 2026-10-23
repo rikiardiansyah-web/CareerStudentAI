@@ -15,7 +15,7 @@ Dokumen ini memandu alur demonstrasi interaktif selama penjurian kompetisi Gen-T
 ### Alur Demo Step-by-Step (Durasi: 5 Menit)
 
 #### 1. Pembukaan & Dashboard Hub (Durasi: 45 detik)
-- **Tampilan:** Buka halaman utama `http://localhost:3000`.
+- **Tampilan:** Buka halaman utama `https://career-student-ai.vercel.app` (atau `http://localhost:3000` di lingkungan lokal).
 - **Narasi Juri:**
   > *"CareerStudent AI bukan AI generator jawaban instan (anti-ghostwriting). Kami membangun 'Co-Pilot Kognitif' yang memandu mahasiswa berpikir kritis dan merefleksikan pencapaian riil mereka melalui 4 pilar."*
 - **Poin Kunci:**
