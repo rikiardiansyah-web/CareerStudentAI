@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package careerstudent.v1;
+
+option go_package = "github.com/rikiardiansyah-web/CareerStudentAI/backend-go/proto;careerv1";
+
+// High-Performance ATS Scoring and WEF 2023 Skill-Gap Matrix Service
+service CareerEngineService {
+  // Evaluates ATS score and extracts keyword density in sub-millisecond
+  rpc EvaluateATS (ATSRequest) returns (ATSResponse);
+  
+  // Computes gap analysis against World Economic Forum (WEF) 2023 skill taxonomy
+  rpc ComputeSkillGap (SkillGapRequest) returns (SkillGapResponse);
+}
+
+message ATSRequest {
+  string candidate_id = 1;
+  string resume_text = 2;
+  string target_role = 3;
+  repeated string required_keywords = 4;
+}
+
+message ATSResponse {
+  int32 ats_score = 1;
+  bool is_ats_compliant = 2;
+  repeated string matched_keywords = 3;
+  repeated string missing_keywords = 4;
+  string recommendations = 5;
+}
+
+message SkillGapRequest {
+  string candidate_id = 1;
+  string target_discipline = 2; // TI, BISNIS_DIGITAL, DKV, BAHASA_INGGRIS_BISNIS
+  repeated string user_skills = 3;
+}
+
+message SkillDetail {
+  string skill_name = 1;
+  string category = 2; // Cognitive, Technology, Management, Self-Efficacy
+  int32 proficiency_score = 3;
+  int32 industry_benchmark = 4;
+}
+
+message SkillGapResponse {
+  int32 overall_readiness_score = 1;
+  repeated SkillDetail core_strengths = 2;
+  repeated SkillDetail priority_gaps = 3;
+  string wef_alignment_summary = 4;
+}

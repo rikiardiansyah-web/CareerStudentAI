@@ -1,7 +1,7 @@
 import os
 from pptx import Presentation
 from pptx.util import Inches, Pt
-from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+from pptx.enum.text import PP_ALIGN
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.dml.color import RGBColor
 
@@ -46,11 +46,9 @@ def set_shape_fill(shape, fill_color, border_color=None, border_width=1):
         shape.line.fill.background()
 
 def add_header(slide, title, category="TIM AQUAMAN TEKNOKRAT  |  GDI FEST 2026", subtitle=None):
-    # Top decorative line
     top_bar = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0), Inches(0), Inches(13.333), Inches(0.1))
     set_shape_fill(top_bar, C_TEAL)
 
-    # Category pill / badge
     badge = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(0.35), Inches(4.5), Inches(0.32))
     set_shape_fill(badge, C_TEAL_LIGHT, C_TEAL, border_width=1)
     tf_b = badge.text_frame
@@ -62,7 +60,6 @@ def add_header(slide, title, category="TIM AQUAMAN TEKNOKRAT  |  GDI FEST 2026",
     p_b.font.color.rgb = C_NAVY_MED
     p_b.alignment = PP_ALIGN.CENTER
 
-    # Title Box
     title_box = slide.shapes.add_textbox(Inches(0.8), Inches(0.72), Inches(11.7), Inches(0.7))
     tf_t = title_box.text_frame
     tf_t.word_wrap = True
@@ -80,11 +77,9 @@ def add_header(slide, title, category="TIM AQUAMAN TEKNOKRAT  |  GDI FEST 2026",
         p_sub.font.color.rgb = C_TEXT_MUTED
 
 def add_footer(slide, is_dark=False):
-    # Footer background line
     line = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0.8), Inches(7.05), Inches(11.733), Inches(0.04))
     set_shape_fill(line, C_TEAL if is_dark else C_CARD_BORDER)
 
-    # Footer Text Left: Brand & Motto
     box_l = slide.shapes.add_textbox(Inches(0.8), Inches(7.12), Inches(7.0), Inches(0.3))
     tf_l = box_l.text_frame
     tf_l.margin_left = tf_l.margin_right = tf_l.margin_top = tf_l.margin_bottom = 0
@@ -94,7 +89,6 @@ def add_footer(slide, is_dark=False):
     p_l.font.bold = True
     p_l.font.color.rgb = C_TEAL if is_dark else C_TEXT_MUTED
 
-    # Footer Text Right: Universitas Teknokrat Indonesia
     box_r = slide.shapes.add_textbox(Inches(7.0), Inches(7.12), Inches(5.533), Inches(0.3))
     tf_r = box_r.text_frame
     tf_r.margin_left = tf_r.margin_right = tf_r.margin_top = tf_r.margin_bottom = 0
@@ -120,15 +114,12 @@ def create_card(slide, left, top, width, height, bg_color=C_CARD_BG, border_colo
 # SLIDE 1: COVER / TITLE SLIDE (Dark Navy Theme)
 # =============================================================
 slide1 = prs.slides.add_slide(blank_layout)
-# Dark background
 bg1 = slide1.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0), Inches(0), Inches(13.333), Inches(7.5))
 set_shape_fill(bg1, C_NAVY_DARK)
 
-# Top accent bar
 bar1 = slide1.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0), Inches(0), Inches(13.333), Inches(0.12))
 set_shape_fill(bar1, C_TEAL)
 
-# Event Badge
 badge1 = slide1.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(0.8), Inches(4.5), Inches(0.42))
 set_shape_fill(badge1, RGBColor(30, 41, 59), C_TEAL, border_width=1.5)
 tf_b1 = badge1.text_frame
@@ -139,7 +130,6 @@ p_b1.font.bold = True
 p_b1.font.color.rgb = C_TEAL
 p_b1.alignment = PP_ALIGN.CENTER
 
-# Main Title Box
 title_box1 = slide1.shapes.add_textbox(Inches(0.8), Inches(1.5), Inches(8.5), Inches(2.2))
 tf1 = title_box1.text_frame
 tf1.word_wrap = True
@@ -160,15 +150,13 @@ p1_main.font.color.rgb = C_TEXT_WHITE
 p1_tag = tf1.add_paragraph()
 p1_tag.text = "Adaptive Career Co-Pilot Berbasis Human-in-the-Loop & Socratic Dialogue untuk Menjembatani Kesiapan Kerja Mahasiswa Multidisiplin di Era AI Generatif"
 p1_tag.font.size = Pt(14)
-p1_tag.font.color.rgb = RGBColor(203, 213, 225) # Slate 300
+p1_tag.font.color.rgb = RGBColor(203, 213, 225)
 
-# Logo Placement on the Right
 if os.path.exists(LOGO_PATH):
     logo_card = slide1.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(9.8), Inches(1.4), Inches(2.7), Inches(2.7))
     set_shape_fill(logo_card, RGBColor(255, 255, 255), C_TEAL, border_width=2)
     slide1.shapes.add_picture(LOGO_PATH, Inches(10.05), Inches(1.65), width=Inches(2.2))
 
-# Team & Institution Info Card at Bottom
 team_bar = slide1.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(4.3), Inches(11.733), Inches(2.2))
 set_shape_fill(team_bar, RGBColor(23, 37, 65), C_TEAL, border_width=1)
 tf_tb = team_bar.text_frame
@@ -214,9 +202,9 @@ members = [
         "prodi": "S1 Teknologi Informasi",
         "focus": [
             "Full-Stack Web Architecture (Next.js 16 PWA)",
+            "High-Performance Microservices (Golang gRPC)",
             "Socratic Dialogue & LLM Prompt Engineering",
-            "Security Hardening (Scrypt & OWASP Compliance)",
-            "System Deployment & CI/CD on Vercel"
+            "Security Hardening (Scrypt & OWASP Compliance)"
         ],
         "accent": C_TEAL
     },
@@ -253,7 +241,6 @@ for idx, m in enumerate(members):
     top = 1.6
     card = create_card(slide2, left, top, 3.733, 5.15, bg_color=C_CARD_BG, border_color=C_CARD_BORDER, border_width=1.5)
     
-    # Member Header Badge
     badge_sh = slide2.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left + 0.2), Inches(top + 0.2), Inches(3.333), Inches(0.35))
     set_shape_fill(badge_sh, m["accent"])
     p_mb = badge_sh.text_frame.paragraphs[0]
@@ -263,7 +250,6 @@ for idx, m in enumerate(members):
     p_mb.font.color.rgb = C_TEXT_WHITE
     p_mb.alignment = PP_ALIGN.CENTER
     
-    # Member Info Textbox
     m_box = slide2.shapes.add_textbox(Inches(left + 0.2), Inches(top + 0.65), Inches(3.333), Inches(4.3))
     tf_m = m_box.text_frame
     tf_m.word_wrap = True
@@ -345,7 +331,7 @@ lb_points = [
         "num": "04",
         "title": "Degradasi Daya Nalar Kritis (Cognitive Atrophy)",
         "desc": "Ketiadaan dialog sokratik menghilangkan ruang belajar reflektif, memperlebar jurang antara kualifikasi ijazah dan kesiapan mental dunia kerja riil.",
-        "color": RGBColor(239, 68, 68) # Red accent
+        "color": RGBColor(239, 68, 68)
     }
 ]
 
@@ -357,7 +343,6 @@ for idx, pt in enumerate(lb_points):
     
     card = create_card(slide3, left, top, 5.733, 1.85, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
-    # Pill number
     pill = slide3.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left + 0.2), Inches(top + 0.2), Inches(0.65), Inches(0.4))
     set_shape_fill(pill, pt["color"])
     p_num = pill.text_frame.paragraphs[0]
@@ -367,7 +352,6 @@ for idx, pt in enumerate(lb_points):
     p_num.font.color.rgb = C_TEXT_WHITE
     p_num.alignment = PP_ALIGN.CENTER
     
-    # Text box
     tb = slide3.shapes.add_textbox(Inches(left + 0.95), Inches(top + 0.15), Inches(4.6), Inches(1.55))
     tf = tb.text_frame
     tf.word_wrap = True
@@ -430,7 +414,6 @@ for idx, sc in enumerate(scopes):
     top = 1.6 + idx * 1.05
     card = create_card(slide4, 0.8, top, 11.733, 0.95, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
-    # Pill
     pill = slide4.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.0), Inches(top + 0.2), Inches(0.7), Inches(0.55))
     set_shape_fill(pill, C_TEAL)
     p_num = pill.text_frame.paragraphs[0]
@@ -440,7 +423,6 @@ for idx, sc in enumerate(scopes):
     p_num.font.color.rgb = C_TEXT_WHITE
     p_num.alignment = PP_ALIGN.CENTER
     
-    # Content Box
     tb = slide4.shapes.add_textbox(Inches(1.85), Inches(top + 0.12), Inches(8.3), Inches(0.75))
     tf = tb.text_frame
     tf.word_wrap = True
@@ -457,7 +439,6 @@ for idx, sc in enumerate(scopes):
     p_d.font.size = Pt(9.5)
     p_d.font.color.rgb = C_TEXT_MUTED
     
-    # Tag Badge on Right
     tag_sh = slide4.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(10.3), Inches(top + 0.3), Inches(2.0), Inches(0.35))
     set_shape_fill(tag_sh, C_TEAL_LIGHT, C_TEAL, border_width=1)
     p_tg = tag_sh.text_frame.paragraphs[0]
@@ -513,7 +494,6 @@ for idx, tr in enumerate(targets):
     top = 1.6 + idx * 1.05
     card = create_card(slide5, 0.8, top, 11.733, 0.95, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
-    # Pill
     pill = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.0), Inches(top + 0.2), Inches(0.7), Inches(0.55))
     set_shape_fill(pill, C_CYAN)
     p_num = pill.text_frame.paragraphs[0]
@@ -523,7 +503,6 @@ for idx, tr in enumerate(targets):
     p_num.font.color.rgb = C_TEXT_WHITE
     p_num.alignment = PP_ALIGN.CENTER
     
-    # Content Box
     tb = slide5.shapes.add_textbox(Inches(1.85), Inches(top + 0.12), Inches(8.0), Inches(0.75))
     tf = tb.text_frame
     tf.word_wrap = True
@@ -540,7 +519,6 @@ for idx, tr in enumerate(targets):
     p_d.font.size = Pt(9.5)
     p_d.font.color.rgb = C_TEXT_MUTED
     
-    # Metric Badge on Right
     m_badge = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(10.0), Inches(top + 0.3), Inches(2.3), Inches(0.35))
     set_shape_fill(m_badge, RGBColor(254, 243, 199), C_GOLD, border_width=1)
     p_mb = m_badge.text_frame.paragraphs[0]
@@ -601,7 +579,7 @@ for idx, pr in enumerate(problems):
     card = create_card(slide6, left, top, 5.733, 1.6, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
     pill = slide6.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left + 0.2), Inches(top + 0.2), Inches(0.65), Inches(0.4))
-    set_shape_fill(pill, RGBColor(239, 68, 68)) # Red accent for problems
+    set_shape_fill(pill, RGBColor(239, 68, 68))
     p_num = pill.text_frame.paragraphs[0]
     p_num.text = pr["num"]
     p_num.font.size = Pt(11)
@@ -634,7 +612,6 @@ add_footer(slide6)
 slide7 = prs.slides.add_slide(blank_layout)
 add_header(slide7, "Kebutuhan Informasi Pemakai Sistem", subtitle="Memetakan Informasi & Fitur Esensial Bagi Dua Pemangku Kepentingan Utama")
 
-# Left Column: Mahasiswa Multidisiplin
 card_mhs = create_card(slide7, 0.8, 1.6, 5.733, 5.15, bg_color=C_CARD_BG, border_color=C_TEAL, border_width=1.5)
 header_mhs = slide7.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.0), Inches(1.8), Inches(5.333), Inches(0.45))
 set_shape_fill(header_mhs, C_TEAL)
@@ -670,7 +647,6 @@ for title, desc in mhs_needs:
     p_d.font.size = Pt(9.5)
     p_d.font.color.rgb = C_TEXT_MUTED
 
-# Right Column: CDC Perguruan Tinggi & Recruiter
 card_cdc = create_card(slide7, 6.8, 1.6, 5.733, 5.15, bg_color=C_CARD_BG, border_color=C_CYAN, border_width=1.5)
 header_cdc = slide7.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(7.0), Inches(1.8), Inches(5.333), Inches(0.45))
 set_shape_fill(header_cdc, C_CYAN)
@@ -719,7 +695,7 @@ activities = [
     ("1", "Analisis Pedagogis & Taksonomi Industri", "Membedah fenomena vibe-applying, standar parser ATS global, dan 10 core skills laporan WEF 2023."),
     ("2", "Arsitektur Next.js 16 (App Router) & UI PWA", "Membangun sistem antarmuka berbasis React 19, Tailwind CSS, Lucide icons, dan Progressive Web Apps."),
     ("3", "Rekayasa Socratic Engine & Approval Gate", "Merancang alur prompt AI sokratik dan memprogram mekanisme penjaga 'Explicit Approval Gate' anti-otomatisasi."),
-    ("4", "Integrasi Audio-Visual Web Speech API", "Menerapkan speech recognition dan synthesis peramban untuk simulasi mock interview berbasis suara interaktif."),
+    ("4", "Desain Microservices Engine (Golang gRPC)", "Merancang kontrak service komputasi taksonomi skill & kalkulasi ATS berkecepatan tinggi."),
     ("5", "Penguatan Keamanan Data & OWASP Hardening", "Implementasi Scrypt password hashing, CSPRNG OTP, HTTP security headers, dan IndexedDB local-first storage."),
     ("6", "Pengujian Fungsional Black-Box (42 Cases)", "Eksekusi 42 skenario pengujian komprehensif pada auth, builder, matrix, dan interview (Tingkat kelulusan 100%)."),
     ("7", "Deployment Produksi Serverless di Vercel", "Rilis live di https://career-student-ai.vercel.app dengan 15 rute aplikasi terverifikasi aktif.")
@@ -729,7 +705,6 @@ for idx, (num, title, desc) in enumerate(activities):
     top = 1.6 + idx * 0.75
     card = create_card(slide8, 0.8, top, 11.733, 0.68, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
-    # Num circle/pill
     pill = slide8.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.0), Inches(top + 0.12), Inches(0.45), Inches(0.44))
     set_shape_fill(pill, C_TEAL)
     p_n = pill.text_frame.paragraphs[0]
@@ -739,7 +714,6 @@ for idx, (num, title, desc) in enumerate(activities):
     p_n.font.color.rgb = C_TEXT_WHITE
     p_n.alignment = PP_ALIGN.CENTER
     
-    # Text
     tb = slide8.shapes.add_textbox(Inches(1.6), Inches(top + 0.08), Inches(10.7), Inches(0.55))
     tf = tb.text_frame
     tf.word_wrap = True
@@ -804,7 +778,6 @@ for idx, ms in enumerate(method_steps):
     left = 0.8 + idx * 2.4
     card = create_card(slide9, left, 1.6, 2.25, 4.4, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
-    # Step header
     sh = slide9.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(left), Inches(1.6), Inches(2.25), Inches(0.45))
     set_shape_fill(sh, C_NAVY_MED)
     p_sh = sh.text_frame.paragraphs[0]
@@ -839,7 +812,6 @@ for idx, ms in enumerate(method_steps):
     p_bb.font.color.rgb = C_NAVY_MED
     p_bb.alignment = PP_ALIGN.CENTER
 
-# Summary banner below
 sum_banner = create_card(slide9, 0.8, 6.15, 11.733, 0.75, bg_color=C_TEAL_LIGHT, border_color=C_TEAL, border_width=1)
 tf_sb = sum_banner.text_frame
 tf_sb.word_wrap = True
@@ -885,7 +857,6 @@ for idx, c in enumerate(constraints):
     left = 0.8 + idx * 4.0
     card = create_card(slide10, left, 1.6, 3.733, 5.15, bg_color=C_CARD_BG, border_color=C_CARD_BORDER, border_width=1.5)
     
-    # Header tag
     tag_sh = slide10.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left + 0.2), Inches(1.8), Inches(3.333), Inches(0.4))
     set_shape_fill(tag_sh, c["accent"])
     p_tsh = tag_sh.text_frame.paragraphs[0]
@@ -914,7 +885,7 @@ for idx, c in enumerate(constraints):
     p_pr = tf.add_paragraph()
     p_pr.text = c["prob"]
     p_pr.font.size = Pt(10)
-    p_pr.font.color.rgb = RGBColor(185, 28, 28) # Red-ish
+    p_pr.font.color.rgb = RGBColor(185, 28, 28)
     
     p_sp = tf.add_paragraph()
     p_sp.text = ""
@@ -923,84 +894,75 @@ for idx, c in enumerate(constraints):
     p_sl = tf.add_paragraph()
     p_sl.text = c["sol"]
     p_sl.font.size = Pt(10)
-    p_sl.font.color.rgb = RGBColor(15, 118, 110) # Teal-ish
+    p_sl.font.color.rgb = RGBColor(15, 118, 110)
 
 add_footer(slide10)
 
 
 # =============================================================
-# SLIDE 11: BIAYA / ARSITEKTUR TEKNOLOGI PENGEMBANGAN
+# SLIDE 11: ARSITEKTUR TEKNOLOGI PENGEMBANGAN (INCLUDING GOLANG)
 # =============================================================
 slide11 = prs.slides.add_slide(blank_layout)
 add_header(slide11, "Arsitektur Teknologi & Efisiensi Biaya Sistem", 
-           subtitle="Struktur Teknologi Modern Kelas Industri dengan Efisiensi Biaya Operasional Maksimal")
+           subtitle="Struktur Teknologi Modern Terdistribusi: Next.js 16, Microservices Golang gRPC, dan PWA Offline-First")
 
 tech_items = [
     {
-        "cat": "FRONTEND & CORE ENGINE",
-        "tech": "Next.js 16 (React 19 App Router) + TypeScript",
-        "desc": "Server-side rendering super cepat, routing modular 15 rute, dan tipe data statis yang mencegah runtime error.",
+        "cat": "FRONTEND & APP ROUTER",
+        "tech": "Next.js 16 (React 19) + TypeScript",
+        "desc": "Server-side rendering super cepat, routing modular 15 rute, dan type-safety penuh yang menjamin keandalan sistem.",
         "cost": "Open Source ($0)"
     },
     {
-        "cat": "STYLING & DESIGN SYSTEM",
-        "tech": "Tailwind CSS + Lucide React Icons",
-        "desc": "Sistem utilitas CSS modern yang sangat ringan, responsif mobile/desktop, dan konsisten dengan brand identity.",
-        "cost": "Open Source ($0)"
+        "cat": "HIGH-PERFORMANCE BACKEND",
+        "tech": "Golang (gRPC-Go) & Protobuf v3",
+        "desc": "Microservices engine performa tinggi untuk komputasi taksonomi skill WEF 2023 dan parsing skor ATS sub-milidetik.",
+        "cost": "High Concurrency ($0)"
     },
     {
-        "cat": "PWA & LOCAL STORAGE",
-        "tech": "Progressive Web Apps (Service Worker) + IndexedDB",
-        "desc": "Aplikasi dapat diinstal di homescreen HP/laptop, berjalan offline-first, dan data CV tersimpan privat di perangkat.",
-        "cost": "Open Source ($0)"
+        "cat": "OFFLINE & LOCAL STORAGE",
+        "tech": "Progressive Web Apps + IndexedDB",
+        "desc": "Dapat diinstal di smartphone/desktop, berjalan offline-first, dan data CV tersimpan privat di perangkat lokal pengguna.",
+        "cost": "Client Storage ($0)"
     },
     {
-        "cat": "KEAMANAN & AUTENTIKASI",
-        "tech": "Scrypt Password Hashing + OWASP Headers",
-        "desc": "Salt 16-byte dengan verifikasi constant-time melawan timing attacks, proteksi CSRF, dan HTTP security headers.",
+        "cat": "KEAMANAN & ENKRIPSI",
+        "tech": "Scrypt Hashing & OWASP Headers",
+        "desc": "Salt 16-byte dengan verifikasi constant-time melawan timing attacks, CSPRNG OTP, dan HTTP security headers ketat.",
         "cost": "In-House Secure ($0)"
     },
     {
-        "cat": "HOSTING & DEPLOYMENT",
-        "tech": "Vercel Serverless Edge Cloud",
-        "desc": "Infrastruktur serverless global dengan otomatisasi CI/CD dari repositori GitHub, high availability 99.9%.",
-        "cost": "Free Tier Production ($0)"
+        "cat": "CLOUD & SERVERLESS HOSTING",
+        "tech": "Vercel Serverless Edge Platform",
+        "desc": "Infrastruktur cloud global dengan otomatisasi CI/CD dari repositori GitHub, high availability 99.9% tanpa cold start.",
+        "cost": "Free Tier Live ($0)"
+    },
+    {
+        "cat": "ORM & DATA PERSISTENCE",
+        "tech": "Prisma ORM & PostgreSQL / SQLite",
+        "desc": "Manajemen skema database terstruktur dengan migrasi aman, mendukung transisi fleksibel lokal ke enterprise cloud.",
+        "cost": "Scalable DB ($0)"
     }
 ]
 
 for idx, ti in enumerate(tech_items):
-    top = 1.6 + idx * 1.05
-    card = create_card(slide11, 0.8, top, 11.733, 0.95, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
+    col = idx % 2
+    row = idx // 2
+    left = 0.8 + col * 6.0
+    top = 1.6 + row * 1.75
     
-    # Category Pill
-    pill = slide11.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.0), Inches(top + 0.2), Inches(2.2), Inches(0.55))
-    set_shape_fill(pill, C_NAVY_DARK)
-    p_num = pill.text_frame.paragraphs[0]
-    p_num.text = ti["cat"]
-    p_num.font.size = Pt(8.5)
-    p_num.font.bold = True
-    p_num.font.color.rgb = C_TEXT_WHITE
-    p_num.alignment = PP_ALIGN.CENTER
+    card = create_card(slide11, left, top, 5.733, 1.6, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
     
-    # Content Box
-    tb = slide11.shapes.add_textbox(Inches(3.35), Inches(top + 0.12), Inches(6.8), Inches(0.75))
-    tf = tb.text_frame
-    tf.word_wrap = True
-    tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
+    badge = slide11.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left + 0.2), Inches(top + 0.15), Inches(2.8), Inches(0.35))
+    set_shape_fill(badge, C_NAVY_DARK)
+    p_b = badge.text_frame.paragraphs[0]
+    p_b.text = ti["cat"]
+    p_b.font.size = Pt(8.5)
+    p_b.font.bold = True
+    p_b.font.color.rgb = C_TEXT_WHITE
+    p_b.alignment = PP_ALIGN.CENTER
     
-    p_t = tf.paragraphs[0]
-    p_t.text = ti["tech"]
-    p_t.font.size = Pt(12)
-    p_t.font.bold = True
-    p_t.font.color.rgb = C_NAVY_DARK
-    
-    p_d = tf.add_paragraph()
-    p_d.text = ti["desc"]
-    p_d.font.size = Pt(9.5)
-    p_d.font.color.rgb = C_TEXT_MUTED
-    
-    # Cost Badge
-    c_badge = slide11.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(10.3), Inches(top + 0.3), Inches(2.0), Inches(0.35))
+    c_badge = slide11.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left + 3.8), Inches(top + 0.15), Inches(1.7), Inches(0.35))
     set_shape_fill(c_badge, C_TEAL_LIGHT, C_TEAL, border_width=1)
     p_cb = c_badge.text_frame.paragraphs[0]
     p_cb.text = ti["cost"]
@@ -1008,6 +970,22 @@ for idx, ti in enumerate(tech_items):
     p_cb.font.bold = True
     p_cb.font.color.rgb = C_NAVY_MED
     p_cb.alignment = PP_ALIGN.CENTER
+    
+    tb = slide11.shapes.add_textbox(Inches(left + 0.2), Inches(top + 0.58), Inches(5.333), Inches(0.95))
+    tf = tb.text_frame
+    tf.word_wrap = True
+    tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
+    
+    p_t = tf.paragraphs[0]
+    p_t.text = ti["tech"]
+    p_t.font.size = Pt(11.5)
+    p_t.font.bold = True
+    p_t.font.color.rgb = C_NAVY_DARK
+    
+    p_d = tf.add_paragraph()
+    p_d.text = ti["desc"]
+    p_d.font.size = Pt(9.5)
+    p_d.font.color.rgb = C_TEXT_MUTED
 
 add_footer(slide11)
 
@@ -1018,7 +996,6 @@ add_footer(slide11)
 slide12 = prs.slides.add_slide(blank_layout)
 add_header(slide12, "Manfaat Nyata Pengembangan Sistem", subtitle="Dampak Positif bagi Mahasiswa Pencari Kerja dan Perguruan Tinggi / CDC Kampus")
 
-# Left: Mahasiswa
 card_m = create_card(slide12, 0.8, 1.6, 5.733, 5.15, bg_color=C_CARD_BG, border_color=C_TEAL, border_width=1.5)
 header_m = slide12.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.0), Inches(1.8), Inches(5.333), Inches(0.45))
 set_shape_fill(header_m, C_TEAL)
@@ -1053,7 +1030,6 @@ for t, d in m_benefits:
     p_d.font.size = Pt(9.5)
     p_d.font.color.rgb = C_TEXT_MUTED
 
-# Right: Perguruan Tinggi / CDC
 card_u = create_card(slide12, 6.8, 1.6, 5.733, 5.15, bg_color=C_CARD_BG, border_color=C_CYAN, border_width=1.5)
 header_u = slide12.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(7.0), Inches(1.8), Inches(5.333), Inches(0.45))
 set_shape_fill(header_u, C_CYAN)
@@ -1110,7 +1086,7 @@ feasibilities = [
         "num": "02",
         "title": "Kelayakan Teknis",
         "status": "SANGAT TINGGI (15/15 ROUTES PASS)",
-        "desc": "Teknologi modern Next.js 16, TypeScript, dan Tailwind CSS memastikan arsitektur sangat modular, cepat, aman, dan mudah dikembangkan lebih lanjut.",
+        "desc": "Teknologi modern Next.js 16, TypeScript, Golang microservice, dan Tailwind CSS memastikan arsitektur sangat modular, cepat, dan aman.",
         "color": C_CYAN
     },
     {
@@ -1125,7 +1101,7 @@ feasibilities = [
         "title": "Kelayakan Pedagogis & Ekonomi",
         "status": "INOVATIF & SUSTAINABLE",
         "desc": "Menjadi solusi pertama yang secara tegas melarang otomatisasi buta AI melalui Explicit Approval Gate, dengan biaya operasional hosting $0 via Vercel.",
-        "color": RGBColor(16, 185, 129) # Emerald Green
+        "color": RGBColor(16, 185, 129)
     }
 ]
 
@@ -1164,7 +1140,7 @@ for idx, f in enumerate(feasibilities):
     p_st.font.color.rgb = f["color"]
     
     p_d = tf.add_paragraph()
-    p_d.text = f["desc"]
+    p_d.text = f"   {f['desc']}"
     p_d.font.size = Pt(10)
     p_d.font.color.rgb = C_TEXT_MUTED
 
@@ -1178,7 +1154,6 @@ slide14 = prs.slides.add_slide(blank_layout)
 add_header(slide14, "Tampilan Projek & Bukti Deployment Produksi", 
            subtitle="Aplikasi Bekerja Nyata (Working Prototype), Teruji 100%, dan Sudah Di-deploy Global")
 
-# Deployment Banner Top
 dep_card = create_card(slide14, 0.8, 1.55, 11.733, 1.25, bg_color=C_NAVY_DARK, border_color=C_TEAL, border_width=1.5)
 tf_dc = dep_card.text_frame
 tf_dc.word_wrap = True
@@ -1221,7 +1196,6 @@ r_git_val.text = "https://github.com/rikiardiansyah-web/CareerStudentAI"
 r_git_val.font.size = Pt(11)
 r_git_val.font.color.rgb = RGBColor(203, 213, 225)
 
-# Screenshot Showcase Left: Fast CV Builder
 card_ss1 = create_card(slide14, 0.8, 2.95, 5.733, 3.8, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
 if os.path.exists(SS1_PATH):
     slide14.shapes.add_picture(SS1_PATH, Inches(0.95), Inches(3.05), width=Inches(5.433))
@@ -1237,7 +1211,6 @@ p_c1.font.bold = True
 p_c1.font.color.rgb = C_NAVY_MED
 p_c1.alignment = PP_ALIGN.CENTER
 
-# Screenshot Showcase Right: Skill-Gap Matrix & Mock Interview
 card_ss2 = create_card(slide14, 6.8, 2.95, 5.733, 3.8, bg_color=C_CARD_BG, border_color=C_CARD_BORDER)
 if os.path.exists(SS2_PATH):
     slide14.shapes.add_picture(SS2_PATH, Inches(6.95), Inches(3.05), width=Inches(5.433))
@@ -1266,13 +1239,11 @@ set_shape_fill(bg15, C_NAVY_DARK)
 bar15 = slide15.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(0), Inches(0), Inches(13.333), Inches(0.12))
 set_shape_fill(bar15, C_TEAL)
 
-# Center Logo
 if os.path.exists(LOGO_PATH):
     logo_card15 = slide15.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(5.8), Inches(1.0), Inches(1.733), Inches(1.733))
     set_shape_fill(logo_card15, RGBColor(255, 255, 255), C_TEAL, border_width=2)
     slide15.shapes.add_picture(LOGO_PATH, Inches(5.95), Inches(1.15), width=Inches(1.433))
 
-# Closing Text Box
 close_box = slide15.shapes.add_textbox(Inches(1.5), Inches(2.9), Inches(10.333), Inches(3.6))
 tf_cl = close_box.text_frame
 tf_cl.word_wrap = True
@@ -1316,7 +1287,6 @@ p_c_camp.font.bold = True
 p_c_camp.font.color.rgb = C_TEXT_WHITE
 p_c_camp.alignment = PP_ALIGN.CENTER
 
-# Live CTA button
 cta_btn = slide15.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(4.5), Inches(5.8), Inches(4.333), Inches(0.55))
 set_shape_fill(cta_btn, C_TEAL, border_width=0)
 p_cta = cta_btn.text_frame.paragraphs[0]
@@ -1328,10 +1298,6 @@ p_cta.alignment = PP_ALIGN.CENTER
 
 add_footer(slide15, is_dark=True)
 
-
-# Save both locations
 prs.save(OUTPUT_SCRATCH)
 prs.save(OUTPUT_BRAIN)
-print(f"Pitch Deck successfully generated with {len(prs.slides)} slides:")
-print(f"1. {OUTPUT_SCRATCH}")
-print(f"2. {OUTPUT_BRAIN}")
+print("Updated Pitch Deck saved successfully with Golang microservices included!")
