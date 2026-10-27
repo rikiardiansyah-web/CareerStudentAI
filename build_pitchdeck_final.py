@@ -22,7 +22,7 @@ C_TEXT_WHITE  = RGBColor(255, 255, 255)
 
 LOGO_PATH = r"C:\Users\Admin\.gemini\antigravity\scratch\careerstudent-ai\public\icons\logo-cs.jpg"
 # Use 4 best CareerStudent AI app screenshots
-SS1_PATH  = r"C:\Users\Admin\.gemini\antigravity\brain\8c1f2961-a2f7-42ef-86e0-6c72fe3fc1a0\.user_uploaded\media_1792360603440_b3d227cf.jpg"   # Login page (navy brand)
+SS1_PATH  = r"C:\Users\Admin\.gemini\antigravity\brain\8c1f2961-a2f7-42ef-86e0-6c72fe3fc1a0\.user_uploaded\media_1793122822145_efd21c23.jpg"   # Login page (Portal Keamanan Akun - clean)
 SS2_PATH  = r"C:\Users\Admin\.gemini\antigravity\brain\8c1f2961-a2f7-42ef-86e0-6c72fe3fc1a0\.user_uploaded\media_1792361551063_a3b6310c.jpg"   # App page (dark header)
 SS3_PATH  = r"C:\Users\Admin\.gemini\antigravity\brain\8c1f2961-a2f7-42ef-86e0-6c72fe3fc1a0\.user_uploaded\media_1792358496331_b326f5d4.jpg"   # App form (navy content)
 SS4_PATH  = r"C:\Users\Admin\.gemini\antigravity\brain\8c1f2961-a2f7-42ef-86e0-6c72fe3fc1a0\.user_uploaded\media_1792361157177_53c3abec.jpg"   # App light page
